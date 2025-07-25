@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impact Dashboard - FestivalHeart Transparency Center</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Explore FestivalHeart's comprehensive impact dashboard featuring real-time tracking, financial transparency, and measurable outcomes from festival campaigns worldwide." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffestivalhe3369back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="font-montserrat font-bold text-xl text-primary">FestivalHeart</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">About Us</a>
+                    <a href="festival_campaign_pages.html" class="text-text-secondary hover:text-primary transition-colors">Festivals</a>
+                    <a href="impact_dashboard.html" class="text-primary font-semibold">Impact</a>
+                    <a href="donor_portal.html" class="text-text-secondary hover:text-primary transition-colors">My Account</a>
+                    <a href="partners_collaborators.html" class="text-text-secondary hover:text-primary transition-colors">Partners</a>
+                    <a href="contact_support.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
+                    <button class="btn-primary">Donate Now</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-text-primary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                <a href="javascript:void(0)" class="block px-3 py-2 text-text-secondary hover:text-primary">About Us</a>
+                <a href="festival_campaign_pages.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Festivals</a>
+                <a href="impact_dashboard.html" class="block px-3 py-2 text-primary font-semibold">Impact</a>
+                <a href="donor_portal.html" class="block px-3 py-2 text-text-secondary hover:text-primary">My Account</a>
+                <a href="partners_collaborators.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Partners</a>
+                <a href="contact_support.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
+                <div class="px-3 py-2">
+                    <button class="btn-primary w-full">Donate Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-accent-50 to-accent-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-hero font-montserrat font-bold mb-6 text-balance">
+                    Transparency You Can Trust
+                </h1>
+                <p class="text-body-lg text-text-secondary max-w-3xl mx-auto mb-8">
+                    Every donation is tracked, every expense is documented, and every impact is measured. Explore our comprehensive dashboard to see exactly how your generosity creates meaningful change in communities worldwide.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="btn-accent text-lg px-8 py-4">
+                        Download Full Report
+                    </button>
+                    <a href="festival_campaign_pages.html" class="bg-white text-accent font-montserrat font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-hover border border-accent-200">
+                        View Active Campaigns
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-Time Impact Metrics -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Live Impact Metrics</h2>
+                <p class="text-body-lg text-text-secondary">Real-time updates from our global festival campaigns</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Total Donations -->
+                <div class="card text-center border-l-4 border-primary">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-montserrat font-bold text-primary mb-2" id="total-donations">$2,847,392</div>
+                    <div class="text-text-secondary">Total Donations Raised</div>
+                    <div class="text-sm text-success mt-2">↗ +12.5% this month</div>
+                </div>
+
+                <!-- Festivals Supported -->
+                <div class="card text-center border-l-4 border-secondary">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 11H7v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9h-2M9 11V9a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v2"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-montserrat font-bold text-secondary mb-2" id="festivals-supported">1,247</div>
+                    <div class="text-text-secondary">Festivals Celebrated</div>
+                    <div class="text-sm text-success mt-2">↗ +47 this month</div>
+                </div>
+
+                <!-- Families Helped -->
+                <div class="card text-center border-l-4 border-accent">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zM4 18v-4h3v4h2v-7.5c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2V18h2v-4h3v4h2v2H2v-2h2z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-montserrat font-bold text-accent mb-2" id="families-helped">18,934</div>
+                    <div class="text-text-secondary">Families Served</div>
+                    <div class="text-sm text-success mt-2">↗ +892 this month</div>
+                </div>
+
+                <!-- Countries Reached -->
+                <div class="card text-center border-l-4 border-primary">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-montserrat font-bold text-primary mb-2">25</div>
+                    <div class="text-text-secondary">Countries Reached</div>
+                    <div class="text-sm text-success mt-2">↗ +2 new countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fund Allocation Chart -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Chart Visualization -->
+                <div class="bg-white rounded-2xl p-8 shadow-card">
+                    <h3 class="text-heading-2 font-montserrat font-semibold mb-6">Fund Allocation Breakdown</h3>
+                    
+                    <!-- Interactive Donut Chart -->
+                    <div class="relative w-80 h-80 mx-auto mb-8">
+                        <svg class="w-full h-full transform -rotate-90" viewBox="0 0 200 200">
+                            <!-- Direct Aid - 85% -->
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#E9ECEF" stroke-width="20"/>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#9CAF88" stroke-width="20" stroke-dasharray="425.6 75.4" stroke-linecap="round" class="transition-all duration-1000"/>
+                            <!-- Operations - 10% -->
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#D4AF37" stroke-width="20" stroke-dasharray="50.24 450.76" stroke-dashoffset="-425.6" stroke-linecap="round" class="transition-all duration-1000"/>
+                            <!-- Platform - 5% -->
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#DC143C" stroke-width="20" stroke-dasharray="25.12 475.88" stroke-dashoffset="-475.84" stroke-linecap="round" class="transition-all duration-1000"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-2xl font-montserrat font-bold text-accent">85%</div>
+                                <div class="text-sm text-text-secondary">Direct Aid</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Legend -->
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-3 bg-accent-50 rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-accent rounded-full"></div>
+                                <span class="font-semibold">Direct Festival Support</span>
+                            </div>
+                            <span class="font-bold text-accent">85%</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-primary-50 rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-primary rounded-full"></div>
+                                <span class="font-semibold">Program Operations</span>
+                            </div>
+                            <span class="font-bold text-primary">10%</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-secondary-50 rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-secondary rounded-full"></div>
+                                <span class="font-semibold">Platform Maintenance</span>
+                            </div>
+                            <span class="font-bold text-secondary">5%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Breakdown -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <h3 class="text-heading-3 font-montserrat font-semibold mb-6">Expense Transparency</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-2 border-b border-border-light">
+                                <span>Traditional foods & sweets</span>
+                                <span class="font-semibold">$1,420,485</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-border-light">
+                                <span>Festival decorations & supplies</span>
+                                <span class="font-semibold">$852,291</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-border-light">
+                                <span>Community space rentals</span>
+                                <span class="font-semibold">$568,194</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-border-light">
+                                <span>Event coordination</span>
+                                <span class="font-semibold">$284,097</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-border-light">
+                                <span>Platform development</span>
+                                <span class="font-semibold">$142,370</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-4 font-bold text-lg">
+                                <span>Total Allocated</span>
+                                <span class="text-accent">$3,267,437</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third-Party Verification -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <h3 class="text-heading-3 font-montserrat font-semibold mb-6">Third-Party Audits</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 bg-success-50 rounded-lg">
+                                <div class="w-12 h-12 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                    </svg>
+                                </div>
+                                <div class="font-semibold text-sm">GuideStar Gold</div>
+                                <div class="text-xs text-text-secondary">Transparency Seal</div>
+                            </div>
+                            <div class="text-center p-4 bg-primary-50 rounded-lg">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="font-semibold text-sm">Charity Navigator</div>
+                                <div class="text-xs text-text-secondary">4-Star Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Impact Map -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Global Impact Visualization</h2>
+                <p class="text-body-lg text-text-secondary">Click on regions to explore local campaign details and cultural contexts</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-card overflow-hidden">
+                <!-- Interactive World Map -->
+                <div class="relative h-96 bg-gradient-to-br from-accent-50 to-accent-100 p-8">
+                    <svg class="w-full h-full" viewBox="0 0 800 400">
+                        <!-- Simplified world map with clickable regions -->
+                        <!-- Asia -->
+                        <path d="M400 100 L500 120 L520 180 L480 200 L420 190 L400 150 Z" fill="#9CAF88" opacity="0.8" class="cursor-pointer hover:opacity-100 transition-opacity region-asia" data-region="Asia" data-campaigns="847" data-families="12,450"/>
+                        
+                        <!-- Europe -->
+                        <path d="M350 80 L420 85 L415 130 L380 125 L355 120 Z" fill="#D4AF37" opacity="0.8" class="cursor-pointer hover:opacity-100 transition-opacity region-europe" data-region="Europe" data-campaigns="156" data-families="2,340"/>
+                        
+                        <!-- North America -->
+                        <path d="M150 90 L250 95 L240 160 L180 155 L160 140 Z" fill="#DC143C" opacity="0.8" class="cursor-pointer hover:opacity-100 transition-opacity region-north-america" data-region="North America" data-campaigns="189" data-families="2,890"/>
+                        
+                        <!-- Africa -->
+                        <path d="M320 160 L380 165 L375 240 L340 235 L325 220 Z" fill="#9CAF88" opacity="0.6" class="cursor-pointer hover:opacity-100 transition-opacity region-africa" data-region="Africa" data-campaigns="45" data-families="1,124"/>
+                        
+                        <!-- South America -->
+                        <path d="M200 200 L260 205 L250 280 L220 275 L205 260 Z" fill="#D4AF37" opacity="0.6" class="cursor-pointer hover:opacity-100 transition-opacity region-south-america" data-region="South America" data-campaigns="10" data-families="130"/>
+                    </svg>
+                    
+                    <!-- Region Info Tooltip -->
+                    <div id="region-tooltip" class="absolute bg-white p-4 rounded-lg shadow-hover border border-border hidden">
+                        <div class="font-semibold text-lg" id="tooltip-region"></div>
+                        <div class="text-sm text-text-secondary mt-1">
+                            <div>Campaigns: <span id="tooltip-campaigns" class="font-semibold"></span></div>
+                            <div>Families Served: <span id="tooltip-families" class="font-semibold"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regional Statistics -->
+                <div class="p-8 bg-surface">
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                        <div class="text-center">
+                            <div class="w-4 h-4 bg-accent rounded-full mx-auto mb-2"></div>
+                            <div class="font-semibold">Asia</div>
+                            <div class="text-sm text-text-secondary">847 campaigns</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-4 h-4 bg-secondary rounded-full mx-auto mb-2"></div>
+                            <div class="font-semibold">North America</div>
+                            <div class="text-sm text-text-secondary">189 campaigns</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-4 h-4 bg-primary rounded-full mx-auto mb-2"></div>
+                            <div class="font-semibold">Europe</div>
+                            <div class="text-sm text-text-secondary">156 campaigns</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-4 h-4 bg-accent opacity-60 rounded-full mx-auto mb-2"></div>
+                            <div class="font-semibold">Africa</div>
+                            <div class="text-sm text-text-secondary">45 campaigns</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-4 h-4 bg-primary opacity-60 rounded-full mx-auto mb-2"></div>
+                            <div class="font-semibold">South America</div>
+                            <div class="text-sm text-text-secondary">10 campaigns</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign Outcome Reports -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Campaign Outcome Reports</h2>
+                <p class="text-body-lg text-text-secondary">Before and after stories showcasing the transformative power of your donations</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Holi Campaign Report -->
+                <div class="bg-white rounded-2xl shadow-card overflow-hidden">
+                    <div class="p-6 border-b border-border">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-heading-3 font-montserrat font-semibold">Holi Festival - Mumbai</h3>
+                            <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold text-secondary">200</div>
+                                <div class="text-sm text-text-secondary">Families Served</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-primary">$12,000</div>
+                                <div class="text-sm text-text-secondary">Total Raised</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-accent">100%</div>
+                                <div class="text-sm text-text-secondary">Goal Achieved</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Before/After Images -->
+                    <div class="grid grid-cols-2">
+                        <div class="relative">
+                            <img src="https://images.pexels.com/photos/1673988/pexels-photo-1673988.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Before Holi celebration" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-sm">Before</div>
+                        </div>
+                        <div class="relative">
+                            <img src="https://images.pixabay.com/photo/2018/03/13/22/53/puzzle-3223941_960_720.jpg" alt="After Holi celebration" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-2 left-2 bg-success text-white px-2 py-1 rounded text-sm">After</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <p class="text-text-secondary mb-4">
+                            "Thanks to FestivalHeart donors, our children experienced their first proper Holi celebration with organic colors, traditional sweets, and community joy."
+                        </p>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=40&h=40&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Community Leader" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold text-sm">Priya Sharma</div>
+                                <div class="text-xs text-text-secondary">Community Coordinator</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eid Campaign Report -->
+                <div class="bg-white rounded-2xl shadow-card overflow-hidden">
+                    <div class="p-6 border-b border-border">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-heading-3 font-montserrat font-semibold">Eid al-Fitr - Dhaka</h3>
+                            <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold text-secondary">150</div>
+                                <div class="text-sm text-text-secondary">Families Served</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-primary">$15,000</div>
+                                <div class="text-sm text-text-secondary">Total Raised</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-accent">100%</div>
+                                <div class="text-sm text-text-secondary">Goal Achieved</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Before/After Images -->
+                    <div class="grid grid-cols-2">
+                        <div class="relative">
+                            <img src="https://images.pixabay.com/photo/2019/05/31/23/11/ramadan-4242409_960_720.jpg" alt="Before Eid celebration" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-sm">Before</div>
+                        </div>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?q=80&w=400&h=300&auto=format&fit=crop&ixlib=rb-4.0.3" alt="After Eid celebration" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute top-2 left-2 bg-success text-white px-2 py-1 rounded text-sm">After</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <p class="text-text-secondary mb-4">
+                            "The Eid feast brought our entire neighborhood together. Children received new clothes and families shared traditional meals with joy and gratitude."
+                        </p>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_150.jpg" alt="Community Leader" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold text-sm">Ahmed Rahman</div>
+                                <div class="text-xs text-text-secondary">Local Organizer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Carousel -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Success Stories</h2>
+                <p class="text-body-lg text-text-secondary">Video testimonials from beneficiaries showcasing festival celebrations made possible through donations</p>
+            </div>
+
+            <div class="relative">
+                <div id="success-carousel" class="overflow-hidden">
+                    <div class="flex transition-transform duration-500" id="success-track">
+                        <!-- Story 1 -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="max-w-4xl mx-auto">
+                                <div class="bg-white rounded-2xl shadow-card overflow-hidden">
+                                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                                        <div class="relative h-64 lg:h-full">
+                                            <img src="https://images.pexels.com/photos/1673988/pexels-photo-1673988.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Diwali celebration success story" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                                <button class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-all">
+                                                    <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M8 5v14l11-7z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="p-8">
+                                            <h3 class="text-heading-3 font-montserrat font-semibold mb-4">Diwali Lights Up Lives in Delhi</h3>
+                                            <blockquote class="text-body-lg font-lora italic text-text-primary mb-6">
+                                                "For the first time in years, our children could light diyas and share sweets with neighbors. The joy on their faces was priceless. Thank you for bringing Diwali back to our community."
+                                            </blockquote>
+                                            <div class="flex items-center space-x-4">
+                                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=60&h=60&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Beneficiary" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                                <div>
+                                                    <div class="font-montserrat font-semibold">Meera Gupta</div>
+                                                    <div class="text-text-secondary text-sm">Mother of 3, Delhi</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Story 2 -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="max-w-4xl mx-auto">
+                                <div class="bg-white rounded-2xl shadow-card overflow-hidden">
+                                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                                        <div class="relative h-64 lg:h-full">
+                                            <img src="https://images.pixabay.com/photo/2019/05/31/23/11/ramadan-4242409_960_720.jpg" alt="Eid celebration success story" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                                <button class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-all">
+                                                    <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M8 5v14l11-7z"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="p-8">
+                                            <h3 class="text-heading-3 font-montserrat font-semibold mb-4">Eid Brings Community Together</h3>
+                                            <blockquote class="text-body-lg font-lora italic text-text-primary mb-6">
+                                                "The Eid feast united our entire neighborhood. Children received new clothes and families shared traditional meals. It felt like a true celebration of our faith and community."
+                                            </blockquote>
+                                            <div class="flex items-center space-x-4">
+                                                <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_150.jpg" alt="Beneficiary" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                                <div>
+                                                    <div class="font-montserrat font-semibold">Hassan Ali</div>
+                                                    <div class="text-text-secondary text-sm">Community Elder, Karachi</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="success-dot w-3 h-3 rounded-full bg-primary transition-all" data-slide="0"></button>
+                    <button class="success-dot w-3 h-3 rounded-full bg-border hover:bg-primary transition-all" data-slide="1"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Accountability -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Partner Accountability</h2>
+                <p class="text-body-lg text-text-secondary">NGO collaborations with performance metrics and community feedback</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Partner 1 -->
+                <div class="bg-white rounded-2xl shadow-card p-6">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=60&h=60&auto=format&fit=crop" alt="Hope Foundation Logo" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-montserrat font-semibold">Hope Foundation</h3>
+                            <div class="text-sm text-text-secondary">Mumbai, India</div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Campaign Success Rate</span>
+                            <span class="font-semibold text-success">96%</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-success h-2 rounded-full" style="width: 96%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Families Served</span>
+                            <span class="font-semibold">2,450</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Community Rating</span>
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 2 -->
+                <div class="bg-white rounded-2xl shadow-card p-6">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://images.pixabay.com/photo/2016/12/27/21/03/logo-1934450_150.jpg" alt="Community Care Logo" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-montserrat font-semibold">Community Care</h3>
+                            <div class="text-sm text-text-secondary">Dhaka, Bangladesh</div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Campaign Success Rate</span>
+                            <span class="font-semibold text-success">92%</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-success h-2 rounded-full" style="width: 92%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Families Served</span>
+                            <span class="font-semibold">1,890</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Community Rating</span>
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-border" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 3 -->
+                <div class="bg-white rounded-2xl shadow-card p-6">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=60&h=60&auto=format&fit=crop" alt="Unity Network Logo" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h3 class="font-montserrat font-semibold">Unity Network</h3>
+                            <div class="text-sm text-text-secondary">Lagos, Nigeria</div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Campaign Success Rate</span>
+                            <span class="font-semibold text-success">89%</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-success h-2 rounded-full" style="width: 89%"></div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Families Served</span>
+                            <span class="font-semibold">1,124</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Community Rating</span>
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-border" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-Time Updates -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Live Campaign Updates</h2>
+                <p class="text-body-lg text-text-secondary">Real-time progress tracking with live donation feeds and celebration photos</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Live Donation Feed -->
+                <div class="bg-white rounded-2xl shadow-card p-6">
+                    <h3 class="text-heading-3 font-montserrat font-semibold mb-6">Recent Donations</h3>
+                    <div class="space-y-4 max-h-96 overflow-y-auto">
+                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                                    <span class="text-primary font-semibold">SJ</span>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-sm">Sarah Johnson</div>
+                                    <div class="text-xs text-text-secondary">2 minutes ago</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-semibold text-success">$50</div>
+                                <div class="text-xs text-text-secondary">Holi Mumbai</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center">
+                                    <span class="text-secondary font-semibold">MC</span>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-sm">Michael Chen</div>
+                                    <div class="text-xs text-text-secondary">5 minutes ago</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-semibold text-success">$100</div>
+                                <div class="text-xs text-text-secondary">Eid Dhaka</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-accent-100 rounded-full flex items-center justify-center">
+                                    <span class="text-accent font-semibold">AR</span>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-sm">Anonymous</div>
+                                    <div class="text-xs text-text-secondary">8 minutes ago</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-semibold text-success">$25</div>
+                                <div class="text-xs text-text-secondary">Diwali Delhi</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                                    <span class="text-primary font-semibold">TC</span>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-sm">TechCorp</div>
+                                    <div class="text-xs text-text-secondary">12 minutes ago</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-semibold text-success">$500</div>
+                                <div class="text-xs text-text-secondary">Christmas Manila</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center">
+                                    <span class="text-secondary font-semibold">RP</span>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-sm">Rajesh Patel</div>
+                                    <div class="text-xs text-text-secondary">15 minutes ago</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="font-semibold text-success">$75</div>
+                                <div class="text-xs text-text-secondary">Holi Mumbai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Current Campaign Progress -->
+                <div class="bg-white rounded-2xl shadow-card p-6">
+                    <h3 class="text-heading-3 font-montserrat font-semibold mb-6">Active Campaign Progress</h3>
+                    <div class="space-y-6">
+                        <!-- Holi Campaign -->
+                        <div class="p-4 bg-secondary-50 rounded-lg">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-semibold">Holi Festival - Mumbai</h4>
+                                <span class="text-sm text-secondary font-semibold">12 days left</span>
+                            </div>
+                            <div class="mb-3">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>$8,750 raised</span>
+                                    <span>Goal: $12,000</span>
+                                </div>
+                                <div class="w-full bg-border rounded-full h-2">
+                                    <div class="bg-secondary h-2 rounded-full transition-all duration-500" style="width: 73%"></div>
+                                </div>
+                            </div>
+                            <div class="text-sm text-text-secondary">73% funded • 156 donors</div>
+                        </div>
+
+                        <!-- Eid Campaign -->
+                        <div class="p-4 bg-accent-50 rounded-lg">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-semibold">Eid al-Fitr - Dhaka</h4>
+                                <span class="text-sm text-accent font-semibold">18 days left</span>
+                            </div>
+                            <div class="mb-3">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>$5,850 raised</span>
+                                    <span>Goal: $15,000</span>
+                                </div>
+                                <div class="w-full bg-border rounded-full h-2">
+                                    <div class="bg-accent h-2 rounded-full transition-all duration-500" style="width: 39%"></div>
+                                </div>
+                            </div>
+                            <div class="text-sm text-text-secondary">39% funded • 89 donors</div>
+                        </div>
+
+                        <!-- Christmas Campaign -->
+                        <div class="p-4 bg-primary-50 rounded-lg">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="font-semibold">Christmas - Manila</h4>
+                                <span class="text-sm text-primary font-semibold">45 days left</span>
+                            </div>
+                            <div class="mb-3">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>$3,200 raised</span>
+                                    <span>Goal: $18,000</span>
+                                </div>
+                                <div class="w-full bg-border rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full transition-all duration-500" style="width: 18%"></div>
+                                </div>
+                            </div>
+                            <div class="text-sm text-text-secondary">18% funded • 42 donors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-accent text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-heading-1 font-montserrat font-bold mb-6">
+                Your Impact Creates Lasting Change
+            </h2>
+            <p class="text-body-lg mb-8 opacity-90">
+                Every donation is tracked, every expense is transparent, and every celebration brings communities together. Join thousands of donors creating meaningful impact through festival celebrations.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="festival_campaign_pages.html" class="bg-white text-accent font-montserrat font-semibold px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all">
+                    Support a Festival
+                </a>
+                <a href="donor_portal.html" class="bg-white bg-opacity-20 backdrop-blur-sm text-white font-montserrat font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:bg-opacity-30 border border-white border-opacity-30">
+                    View My Impact
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="font-montserrat font-bold text-xl text-primary">FestivalHeart</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Transforming lives through the universal joy of festival celebrations.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="festival_campaign_pages.html" class="text-gray-300 hover:text-primary transition-colors">Festivals</a></li>
+                        <li><a href="impact_dashboard.html" class="text-gray-300 hover:text-primary transition-colors">Impact</a></li>
+                        <li><a href="donor_portal.html" class="text-gray-300 hover:text-primary transition-colors">Donor Portal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact_support.html" class="text-gray-300 hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.56-2.23 0-.88.66-1.56 1.44-1.688C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.56-2.23 0-.88.66-1.56 1.44-1.688C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 FestivalHeart. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Counter Animation
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                
+                if (element.id === 'total-donations') {
+                    element.textContent = '$' + Math.floor(current).toLocaleString();
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+            }, 20);
+        }
+
+        // Intersection Observer for counter animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const element = entry.target;
+                    if (element.id === 'total-donations') {
+                        animateCounter(element, 2847392);
+                    } else if (element.id === 'festivals-supported') {
+                        animateCounter(element, 1247);
+                    } else if (element.id === 'families-helped') {
+                        animateCounter(element, 18934);
+                    }
+                    observer.unobserve(element);
+                }
+            });
+        });
+
+        // Observe counter elements
+        document.querySelectorAll('[id$="-donations"], [id$="-supported"], [id$="-helped"]').forEach(counter => {
+            observer.observe(counter);
+        });
+
+        // Interactive Map
+        const regions = document.querySelectorAll('[class*="region-"]');
+        const tooltip = document.getElementById('region-tooltip');
+
+        regions.forEach(region => {
+            region.addEventListener('mouseenter', function(e) {
+                const regionName = this.dataset.region;
+                const campaigns = this.dataset.campaigns;
+                const families = this.dataset.families;
+                
+                document.getElementById('tooltip-region').textContent = regionName;
+                document.getElementById('tooltip-campaigns').textContent = campaigns;
+                document.getElementById('tooltip-families').textContent = families;
+                
+                tooltip.classList.remove('hidden');
+                tooltip.style.left = e.pageX + 10 + 'px';
+                tooltip.style.top = e.pageY - 10 + 'px';
+            });
+
+            region.addEventListener('mouseleave', function() {
+                tooltip.classList.add('hidden');
+            });
+
+            region.addEventListener('mousemove', function(e) {
+                tooltip.style.left = e.pageX + 10 + 'px';
+                tooltip.style.top = e.pageY - 10 + 'px';
+            });
+        });
+
+        // Success Stories Carousel
+        let currentSuccess = 0;
+        const successTrack = document.getElementById('success-track');
+        const successDots = document.querySelectorAll('.success-dot');
+
+        function showSuccess(index) {
+            successTrack.style.transform = `translateX(-${index * 100}%)`;
+            successDots.forEach((dot, i) => {
+                dot.classList.toggle('bg-primary', i === index);
+                dot.classList.toggle('bg-border', i !== index);
+            });
+        }
+
+        function nextSuccess() {
+            currentSuccess = (currentSuccess + 1) % successDots.length;
+            showSuccess(currentSuccess);
+        }
+
+        // Auto-advance success stories
+        setInterval(nextSuccess, 8000);
+
+        // Success story dot navigation
+        successDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSuccess = index;
+                showSuccess(currentSuccess);
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

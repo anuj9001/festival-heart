@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #D4AF37; /* Festival gold for celebration and trust */
+  --color-primary-50: #FEFCF3;
+  --color-primary-100: #FDF8E1;
+  --color-primary-200: #FAF0C4;
+  --color-primary-300: #F6E8A6;
+  --color-primary-400: #F2DF89;
+  --color-primary-500: #D4AF37; /* Main primary */
+  --color-primary-600: #B8941F;
+  --color-primary-700: #9C7A17;
+  --color-primary-800: #80600F;
+  --color-primary-900: #644607;
+
+  /* Secondary Colors */
+  --color-secondary: #DC143C; /* Warm crimson for urgency without panic */
+  --color-secondary-50: #FDF2F4;
+  --color-secondary-100: #FCE4E8;
+  --color-secondary-200: #F8C9D1;
+  --color-secondary-300: #F4AEBA;
+  --color-secondary-400: #F093A3;
+  --color-secondary-500: #DC143C; /* Main secondary */
+  --color-secondary-600: #C01133;
+  --color-secondary-700: #A40E2A;
+  --color-secondary-800: #880B21;
+  --color-secondary-900: #6C0818;
+
+  /* Accent Colors */
+  --color-accent: #9CAF88; /* Sage green for growth and hope */
+  --color-accent-50: #F7F9F5;
+  --color-accent-100: #EFF3EB;
+  --color-accent-200: #DFE7D7;
+  --color-accent-300: #CFDBC3;
+  --color-accent-400: #BFCFAF;
+  --color-accent-500: #9CAF88; /* Main accent */
+  --color-accent-600: #849674;
+  --color-accent-700: #6C7D60;
+  --color-accent-800: #54644C;
+  --color-accent-900: #3C4B38;
+
+  /* Background Colors */
+  --color-background: #FEFEFE; /* Warm white for content clarity */
+  --color-surface: #F8F9FA; /* Subtle gray for card depth */
+
+  /* Text Colors */
+  --color-text-primary: #2C3E50; /* Charcoal for comfortable reading */
+  --color-text-secondary: #6C757D; /* Medium gray for hierarchy */
+
+  /* Status Colors */
+  --color-success: #28A745; /* Natural green for positive confirmation */
+  --color-warning: #FFC107; /* Amber for gentle urgency */
+  --color-error: #E74C3C; /* Coral red for helpful concern */
+
+  /* Border Colors */
+  --color-border: #E9ECEF; /* Light gray for minimal borders */
+  --color-border-light: #F1F3F4;
+  --color-border-dark: #DEE2E6;
+
+  /* Shadow Colors */
+  --shadow-subtle: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+@layer base {
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+  }
+
+  .font-accent {
+    font-family: 'Lora', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white font-montserrat font-semibold px-6 py-3 rounded-lg transition-all duration-300 ease-out hover:bg-primary-600 hover:shadow-hover;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white font-montserrat font-semibold px-6 py-3 rounded-lg transition-all duration-300 ease-out hover:bg-secondary-600 hover:shadow-hover;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white font-montserrat font-semibold px-6 py-3 rounded-lg transition-all duration-300 ease-out hover:bg-accent-600 hover:shadow-hover;
+  }
+
+  .card {
+    @apply bg-surface rounded-lg shadow-card p-6 transition-all duration-300 ease-out hover:shadow-hover;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-border rounded-lg bg-background text-text-primary placeholder-text-secondary focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary-500 transition-all duration-300 ease-out;
+  }
+
+  .fade-in {
+    @apply opacity-0 translate-y-4 transition-all duration-400 ease-out;
+  }
+
+  .fade-in.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+}

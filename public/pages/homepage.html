@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FestivalHeart - Every Festival Tells a Story of Hope</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Transform lives through festival celebrations. Join our community-driven platform connecting generous donors with underserved communities worldwide." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffestivalhe3369back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="font-montserrat font-bold text-xl text-primary">FestivalHeart</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-primary font-semibold">Home</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">About Us</a>
+                    <a href="festival_campaign_pages.html" class="text-text-secondary hover:text-primary transition-colors">Festivals</a>
+                    <a href="impact_dashboard.html" class="text-text-secondary hover:text-primary transition-colors">Impact</a>
+                    <a href="donor_portal.html" class="text-text-secondary hover:text-primary transition-colors">My Account</a>
+                    <a href="partners_collaborators.html" class="text-text-secondary hover:text-primary transition-colors">Partners</a>
+                    <a href="contact_support.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
+                    <a href="payment.html" ><button class="btn-primary" >Donate Now</button></a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-text-primary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="block px-3 py-2 text-primary font-semibold">Home</a>
+                <a href="javascript:void(0)" class="block px-3 py-2 text-text-secondary hover:text-primary">About Us</a>
+                <a href="festival_campaign_pages.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Festivals</a>
+                <a href="impact_dashboard.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Impact</a>
+                <a href="donor_portal.html" class="block px-3 py-2 text-text-secondary hover:text-primary">My Account</a>
+                <a href="partners_collaborators.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Partners</a>
+                <a href="contact_support.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
+                <div class="px-3 py-2">
+                    <a href="payment.html"><button  class="btn-primary w-full">Donate Now</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="relative h-screen overflow-hidden">
+        <div id="hero-carousel" class="relative w-full h-full">
+            <!-- Slide 1 - Diwali -->
+            <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+                <img src="https://images.pexels.com/photos/1673988/pexels-photo-1673988.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Children celebrating Diwali with sparklers" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            </div>
+            
+            <!-- Slide 2 - Eid -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                <img src="https://images.pixabay.com/photo/2019/05/31/23/11/ramadan-4242409_1920.jpg" alt="Families sharing Eid meals together" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            </div>
+            
+            <!-- Slide 3 - Christmas -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Communities gathering for Christmas celebrations" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="absolute inset-0 flex items-center justify-center z-10">
+            <div class="text-center text-white max-w-4xl mx-auto px-4">
+                <h1 class="text-hero font-montserrat font-bold mb-6 text-balance">
+                    Every Festival Tells a Story of Hope
+                </h1>
+                <p class="text-body-lg mb-8 max-w-2xl mx-auto opacity-90">
+                    Transform lives through the joy of celebration. Join thousands of donors creating magical festival moments for underserved communities worldwide.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="payment.html" ><button class="btn-primary text-lg px-8 py-4 hover:scale-105 transform transition-all">
+                        Donate Now
+                    </button></a>
+                    <a href="impact_dashboard.html" class="bg-white bg-opacity-20 backdrop-blur-sm text-white font-montserrat font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:bg-opacity-30 border border-white border-opacity-30">
+                        See Our Impact
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+            <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all" data-slide="0"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all" data-slide="1"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Live Impact Counter -->
+    <section class="bg-primary py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
+                <div class="space-y-2">
+                    <div class="text-4xl font-montserrat font-bold" id="donations-counter">$2,847,392</div>
+                    <div class="text-lg opacity-90">Total Donations Raised</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-montserrat font-bold" id="festivals-counter">1,247</div>
+                    <div class="text-lg opacity-90">Festivals Supported</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl font-montserrat font-bold" id="families-counter">18,934</div>
+                    <div class="text-lg opacity-90">Families Helped</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Festival Calendar -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Upcoming Festival Celebrations</h2>
+                <p class="text-body-lg text-text-secondary max-w-2xl mx-auto">
+                    Join us in bringing joy to communities through upcoming festivals. Every celebration creates lasting memories and strengthens cultural bonds.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Holi Festival Card -->
+                <div class="card hover:shadow-hover transition-all duration-300 border-l-4 border-secondary">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🎨</span>
+                            </div>
+                            <div>
+                                <h3 class="font-montserrat font-semibold text-lg">Holi Festival</h3>
+                                <p class="text-text-secondary text-sm">March 14, 2025</p>
+                            </div>
+                        </div>
+                        <span class="bg-secondary text-white text-xs px-2 py-1 rounded-full">Urgent</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">Bring colors of joy to 200 families in Mumbai celebrating the festival of colors.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span>Progress</span>
+                            <span class="font-semibold">$8,450 / $12,000</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-secondary h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <button class="btn-secondary w-full">Support Holi</button>
+                </div>
+
+                <!-- Eid Festival Card -->
+                <div class="card hover:shadow-hover transition-all duration-300 border-l-4 border-accent">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🌙</span>
+                            </div>
+                            <div>
+                                <h3 class="font-montserrat font-semibold text-lg">Eid al-Fitr</h3>
+                                <p class="text-text-secondary text-sm">April 10, 2025</p>
+                            </div>
+                        </div>
+                        <span class="bg-accent text-white text-xs px-2 py-1 rounded-full">Active</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">Celebrate the end of Ramadan with feast preparations for 150 families in Bangladesh.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span>Progress</span>
+                            <span class="font-semibold">$5,200 / $15,000</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-accent h-2 rounded-full" style="width: 35%"></div>
+                        </div>
+                    </div>
+                    <button class="btn-accent w-full">Support Eid</button>
+                </div>
+
+                <!-- Diwali Festival Card -->
+                <div class="card hover:shadow-hover transition-all duration-300 border-l-4 border-primary">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🪔</span>
+                            </div>
+                            <div>
+                                <h3 class="font-montserrat font-semibold text-lg">Diwali</h3>
+                                <p class="text-text-secondary text-sm">November 1, 2025</p>
+                            </div>
+                        </div>
+                        <span class="bg-primary text-white text-xs px-2 py-1 rounded-full">Planning</span>
+                    </div>
+                    <p class="text-text-secondary mb-4">Light up lives with traditional Diwali celebrations for 300 families across India.</p>
+                    <div class="mb-4">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span>Progress</span>
+                            <span class="font-semibold">$2,100 / $20,000</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 10%"></div>
+                        </div>
+                    </div>
+                    <button class="btn-primary w-full">Support Diwali</button>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="festival_campaign_pages.html" class="btn-primary text-lg px-8 py-4">
+                    View All Festivals
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Campaign -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-hover overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="relative h-64 lg:h-full">
+                        <img src="https://images.pexels.com/photos/1673988/pexels-photo-1673988.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Holi celebration with families" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">Featured Campaign</span>
+                        </div>
+                    </div>
+                    <div class="p-8 lg:p-12">
+                        <h3 class="text-heading-2 font-montserrat font-bold mb-4">Holi Celebrations for 200 Families in Mumbai</h3>
+                        <p class="text-body-lg text-text-secondary mb-6">
+                            Help us bring the vibrant colors of Holi to families who need it most. Your donation provides traditional sweets, organic colors, and community celebration space.
+                        </p>
+                        
+                        <!-- Progress Bar -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold">$8,450 raised</span>
+                                <span class="text-text-secondary">Goal: $12,000</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-3">
+                                <div class="bg-secondary h-3 rounded-full transition-all duration-500" style="width: 70%"></div>
+                            </div>
+                            <div class="flex justify-between text-sm text-text-secondary mt-2">
+                                <span>70% funded</span>
+                                <span>12 days left</span>
+                            </div>
+                        </div>
+
+                        <!-- Expense Breakdown -->
+                        <div class="bg-surface rounded-lg p-4 mb-6">
+                            <h4 class="font-montserrat font-semibold mb-3">Transparent Expense Breakdown</h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span>Traditional sweets & snacks</span>
+                                    <span class="font-semibold">$4,800</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Organic colors & supplies</span>
+                                    <span class="font-semibold">$3,200</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Community space & decorations</span>
+                                    <span class="font-semibold">$2,800</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Event coordination</span>
+                                    <span class="font-semibold">$1,200</span>
+                                </div>
+                                <div class="border-t border-border pt-2 flex justify-between font-semibold">
+                                    <span>Total Goal</span>
+                                    <span>$12,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-secondary w-full text-lg py-4">
+                            Donate to Holi Campaign
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Carousel -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Stories of Impact</h2>
+                <p class="text-body-lg text-text-secondary max-w-2xl mx-auto">
+                    Hear from the hearts we've touched and the generous souls who make it possible.
+                </p>
+            </div>
+
+            <div class="relative">
+                <div id="testimonial-carousel" class="overflow-hidden">
+                    <div class="flex transition-transform duration-500" id="testimonial-track">
+                        <!-- Donor Testimonial -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="max-w-4xl mx-auto text-center">
+                                <div class="bg-white rounded-2xl p-8 shadow-card">
+                                    <div class="flex justify-center mb-6">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Sarah Johnson" class="w-20 h-20 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    </div>
+                                    <blockquote class="text-body-lg font-lora italic text-text-primary mb-6">
+                                        "FestivalHeart showed me how my donation directly impacted families during Diwali. Seeing the photos and videos of children lighting their first diyas brought tears to my eyes. This platform makes giving feel personal and meaningful."
+                                    </blockquote>
+                                    <div>
+                                        <div class="font-montserrat font-semibold">Sarah Johnson</div>
+                                        <div class="text-text-secondary">Monthly Donor since 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Beneficiary Testimonial -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="max-w-4xl mx-auto text-center">
+                                <div class="bg-white rounded-2xl p-8 shadow-card">
+                                    <div class="flex justify-center mb-6">
+                                        <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_150.jpg" alt="Rajesh Patel" class="w-20 h-20 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    </div>
+                                    <blockquote class="text-body-lg font-lora italic text-text-primary mb-6">
+                                        "Thanks to FestivalHeart, my children experienced their first proper Holi celebration. The joy on their faces when they played with colors and shared sweets with neighbors - it's a memory we'll treasure forever. Thank you for bringing our community together."
+                                    </blockquote>
+                                    <div>
+                                        <div class="font-montserrat font-semibold">Rajesh Patel</div>
+                                        <div class="text-text-secondary">Beneficiary, Mumbai</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Corporate Partner Testimonial -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="max-w-4xl mx-auto text-center">
+                                <div class="bg-white rounded-2xl p-8 shadow-card">
+                                    <div class="flex justify-center mb-6">
+                                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Michael Chen" class="w-20 h-20 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    </div>
+                                    <blockquote class="text-body-lg font-lora italic text-text-primary mb-6">
+                                        "Partnering with FestivalHeart for our CSR initiatives has been transformative. Their transparency, cultural sensitivity, and measurable impact align perfectly with our values. Our employees are proud to support such meaningful work."
+                                    </blockquote>
+                                    <div>
+                                        <div class="font-montserrat font-semibold">Michael Chen</div>
+                                        <div class="text-text-secondary">CSR Director, TechCorp</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Navigation -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-primary transition-all" data-slide="0"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-border hover:bg-primary transition-all" data-slide="1"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-border hover:bg-primary transition-all" data-slide="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Transparency You Can Trust</h2>
+                <p class="text-body-lg text-text-secondary max-w-2xl mx-auto">
+                    Every donation is tracked, every expense is documented, and every impact is measured. See exactly how your generosity creates change.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Financial Breakdown Chart -->
+                <div class="bg-white rounded-2xl p-8 shadow-card">
+                    <h3 class="text-heading-3 font-montserrat font-semibold mb-6">How Your Donations Are Used</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-primary rounded-full"></div>
+                                <span>Direct Festival Support</span>
+                            </div>
+                            <span class="font-semibold">85%</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-accent rounded-full"></div>
+                                <span>Program Operations</span>
+                            </div>
+                            <span class="font-semibold">10%</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-accent h-2 rounded-full" style="width: 10%"></div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-4 h-4 bg-secondary rounded-full"></div>
+                                <span>Administrative Costs</span>
+                            </div>
+                            <span class="font-semibold">5%</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-secondary h-2 rounded-full" style="width: 5%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trust Badges and Certifications -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <h3 class="text-heading-3 font-montserrat font-semibold mb-6">Third-Party Audits & Certifications</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                    </svg>
+                                </div>
+                                <div class="font-semibold">GuideStar Gold</div>
+                                <div class="text-sm text-text-secondary">Transparency Seal</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="font-semibold">Charity Navigator</div>
+                                <div class="text-sm text-text-secondary">4-Star Rating</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <h3 class="text-heading-3 font-montserrat font-semibold mb-4">Real-Time Impact Tracking</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span>Festivals Completed This Month</span>
+                                <span class="font-semibold text-success">47</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Active Campaigns</span>
+                                <span class="font-semibold text-primary">23</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Average Campaign Success Rate</span>
+                                <span class="font-semibold text-accent">94%</span>
+                            </div>
+                        </div>
+                        <a href="impact_dashboard.html" class="btn-primary w-full mt-6">
+                            View Detailed Impact Report
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-2 font-montserrat font-bold mb-4">Trusted by Leading Organizations</h2>
+                <p class="text-body-lg text-text-secondary">
+                    Join thousands of individuals and hundreds of companies making a difference
+                </p>
+            </div>
+
+            <!-- Corporate Partner Logos -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60 hover:opacity-100 transition-opacity">
+                <div class="flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=150&h=60&auto=format&fit=crop" alt="TechCorp Logo" class="h-12 object-contain grayscale hover:grayscale-0 transition-all" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://images.pixabay.com/photo/2016/12/27/21/03/logo-1934450_150.jpg" alt="Global Solutions Logo" class="h-12 object-contain grayscale hover:grayscale-0 transition-all" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=150&h=60&auto=format&fit=crop" alt="Innovation Labs Logo" class="h-12 object-contain grayscale hover:grayscale-0 transition-all" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://images.pixabay.com/photo/2017/03/19/03/40/avatar-2155431_150.jpg" alt="Future Dynamics Logo" class="h-12 object-contain grayscale hover:grayscale-0 transition-all" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=150&h=60&auto=format&fit=crop" alt="Digital Ventures Logo" class="h-12 object-contain grayscale hover:grayscale-0 transition-all" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://images.pixabay.com/photo/2015/05/31/10/55/man-791049_150.jpg" alt="Community Partners Logo" class="h-12 object-contain grayscale hover:grayscale-0 transition-all" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+            </div>
+
+            <!-- Community Statistics -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <div class="text-center">
+                    <div class="text-3xl font-montserrat font-bold text-primary mb-2">50,000+</div>
+                    <div class="text-text-secondary">Active Donors</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-montserrat font-bold text-secondary mb-2">200+</div>
+                    <div class="text-text-secondary">Corporate Partners</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-montserrat font-bold text-accent mb-2">25</div>
+                    <div class="text-text-secondary">Countries Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-heading-1 font-montserrat font-bold mb-6">
+                Start Your Journey of Giving Today
+            </h2>
+            <p class="text-body-lg mb-8 opacity-90">
+                Join our community of changemakers and help us bring the joy of festivals to families who need it most. Every donation, no matter the size, creates lasting memories and strengthens communities.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary font-montserrat font-semibold px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all">
+                    Make Your First Donation
+                </button>
+                <a href="donor_portal.html" class="bg-white bg-opacity-20 backdrop-blur-sm text-white font-montserrat font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:bg-opacity-30 border border-white border-opacity-30">
+                    Create Donor Account
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="font-montserrat font-bold text-xl text-primary">FestivalHeart</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Transforming lives through the universal joy of festival celebrations.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="festival_campaign_pages.html" class="text-gray-300 hover:text-primary transition-colors">Festivals</a></li>
+                        <li><a href="impact_dashboard.html" class="text-gray-300 hover:text-primary transition-colors">Impact</a></li>
+                        <li><a href="donor_portal.html" class="text-gray-300 hover:text-primary transition-colors">Donor Portal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact_support.html" class="text-gray-300 hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.222.083.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 FestivalHeart. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Donation Button -->
+    <div class="fixed bottom-4 right-4 z-50 md:hidden">
+        <button class="btn-secondary rounded-full w-14 h-14 flex items-center justify-center shadow-hover">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hero Carousel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('bg-white', i === index);
+                dot.classList.toggle('bg-opacity-100', i === index);
+                dot.classList.toggle('bg-opacity-50', i !== index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto-advance carousel
+        setInterval(nextSlide, 5000);
+
+        // Dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Testimonial Carousel
+        let currentTestimonial = 0;
+        const testimonialTrack = document.getElementById('testimonial-track');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+
+        function showTestimonial(index) {
+            testimonialTrack.style.transform = `translateX(-${index * 100}%)`;
+            testimonialDots.forEach((dot, i) => {
+                dot.classList.toggle('bg-primary', i === index);
+                dot.classList.toggle('bg-border', i !== index);
+            });
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonialDots.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        // Auto-advance testimonials
+        setInterval(nextTestimonial, 7000);
+
+        // Testimonial dot navigation
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentTestimonial = index;
+                showTestimonial(currentTestimonial);
+            });
+        });
+
+        // Counter Animation
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                
+                if (element.id === 'donations-counter') {
+                    element.textContent = '$' + Math.floor(current).toLocaleString();
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+            }, 20);
+        }
+
+        // Intersection Observer for counter animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const element = entry.target;
+                    if (element.id === 'donations-counter') {
+                        animateCounter(element, 2847392);
+                    } else if (element.id === 'festivals-counter') {
+                        animateCounter(element, 1247);
+                    } else if (element.id === 'families-counter') {
+                        animateCounter(element, 18934);
+                    }
+                    observer.unobserve(element);
+                }
+            });
+        });
+
+        // Observe counter elements
+        document.querySelectorAll('[id$="-counter"]').forEach(counter => {
+            observer.observe(counter);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

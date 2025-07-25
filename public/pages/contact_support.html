@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Support - FestivalHeart</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Get in touch with FestivalHeart. Multiple support channels, FAQ, and community resources to help you make a meaningful impact through festival donations." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffestivalhe3369back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="font-montserrat font-bold text-xl text-primary">FestivalHeart</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="festival_campaign_pages.html" class="text-text-secondary hover:text-primary transition-colors">Festivals</a>
+                    <a href="impact_dashboard.html" class="text-text-secondary hover:text-primary transition-colors">Impact</a>
+                    <a href="donor_portal.html" class="text-text-secondary hover:text-primary transition-colors">My Account</a>
+                    <a href="partners_collaborators.html" class="text-text-secondary hover:text-primary transition-colors">Partners</a>
+                    <a href="contact_support.html" class="text-primary font-semibold">Contact</a>
+                    <button class="btn-primary">Donate Now</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-text-primary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                <a href="festival_campaign_pages.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Festivals</a>
+                <a href="impact_dashboard.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Impact</a>
+                <a href="donor_portal.html" class="block px-3 py-2 text-text-secondary hover:text-primary">My Account</a>
+                <a href="partners_collaborators.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Partners</a>
+                <a href="contact_support.html" class="block px-3 py-2 text-primary font-semibold">Contact</a>
+                <div class="px-3 py-2">
+                    <button class="btn-primary w-full">Donate Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-hero font-montserrat font-bold mb-6 text-balance">
+                    We're Here to Help
+                </h1>
+                <p class="text-body-lg text-text-secondary max-w-3xl mx-auto mb-8">
+                    Whether you have questions about donations, need partnership information, or want to learn more about our impact, our dedicated support team is ready to assist you every step of the way.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button id="start-chat-btn" class="btn-primary text-lg px-8 py-4">
+                        Start Live Chat
+                    </button>
+                    <a href="#contact-form" class="bg-white text-primary font-montserrat font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-hover border border-primary">
+                        Send Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Phone Support -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-heading-3 font-montserrat font-semibold mb-2">Phone Support</h3>
+                    <p class="text-text-secondary mb-4">Speak directly with our culturally-trained representatives</p>
+                    <div class="space-y-2">
+                        <div>
+                            <div class="font-semibold">US & Canada</div>
+                            <a href="tel:+1-800-FESTIVAL" class="text-primary hover:text-primary-600">+1 (800) FESTIVAL</a>
+                        </div>
+                        <div>
+                            <div class="font-semibold">International</div>
+                            <a href="tel:+1-555-123-4567" class="text-primary hover:text-primary-600">+1 (555) 123-4567</a>
+                        </div>
+                    </div>
+                    <div class="text-sm text-text-secondary mt-2">
+                        Mon-Fri: 9AM-8PM EST<br />
+                        Sat-Sun: 10AM-6PM EST
+                    </div>
+                </div>
+
+                <!-- Email Support -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-heading-3 font-montserrat font-semibold mb-2">Email Support</h3>
+                    <p class="text-text-secondary mb-4">Get detailed responses within 24 hours</p>
+                    <div class="space-y-2">
+                        <div>
+                            <div class="font-semibold">Donations</div>
+                            <a href="mailto:donations@festivalheart.org" class="text-primary hover:text-primary-600">donations@festivalheart.org</a>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Partnerships</div>
+                            <a href="mailto:partnerships@festivalheart.org" class="text-primary hover:text-primary-600">partnerships@festivalheart.org</a>
+                        </div>
+                        <div>
+                            <div class="font-semibold">General Support</div>
+                            <a href="mailto:support@festivalheart.org" class="text-primary hover:text-primary-600">support@festivalheart.org</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Chat -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-heading-3 font-montserrat font-semibold mb-2">Live Chat</h3>
+                    <p class="text-text-secondary mb-4">Instant assistance with multilingual support</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                            <span class="text-success font-semibold">Online Now</span>
+                        </div>
+                        <div class="text-sm text-text-secondary">
+                            Available in English, Spanish,<br />
+                            Hindi, Arabic, and French
+                        </div>
+                    </div>
+                    <button id="open-chat-btn" class="btn-accent mt-4">Start Chat</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-20 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Send Us a Message</h2>
+                <p class="text-body-lg text-text-secondary">
+                    Fill out the form below and we'll get back to you within 24 hours
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-card p-8">
+                <form id="contact-form-element" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first-name" class="block text-sm font-semibold text-text-primary mb-2">First Name *</label>
+                            <input type="text" id="first-name" name="firstName" required class="input-field" placeholder="Enter your first name" />
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-semibold text-text-primary mb-2">Last Name *</label>
+                            <input type="text" id="last-name" name="lastName" required class="input-field" placeholder="Enter your last name" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-text-primary mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="input-field" placeholder="your.email@example.com" />
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-text-primary mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="input-field" placeholder="+1 (555) 123-4567" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="inquiry-type" class="block text-sm font-semibold text-text-primary mb-2">Inquiry Type *</label>
+                        <select id="inquiry-type" name="inquiryType" required class="input-field">
+                            <option value>Select inquiry type</option>
+                            <option value="donation">Donation Questions</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="beneficiary">Beneficiary Applications</option>
+                            <option value="volunteer">Volunteer Opportunities</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="media">Media Inquiries</option>
+                            <option value="general">General Support</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-sm font-semibold text-text-primary mb-2">Subject *</label>
+                        <input type="text" id="subject" name="subject" required class="input-field" placeholder="Brief description of your inquiry" />
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-text-primary mb-2">Message *</label>
+                        <textarea id="message" name="message" rows="6" required class="input-field" placeholder="Please provide details about your inquiry. The more information you share, the better we can assist you."></textarea>
+                    </div>
+
+                    <div>
+                        <label for="preferred-contact" class="block text-sm font-semibold text-text-primary mb-2">Preferred Contact Method</label>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center">
+                                <input type="radio" name="preferredContact" value="email" class="text-primary focus:ring-primary-300" checked />
+                                <span class="ml-2">Email</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="preferredContact" value="phone" class="text-primary focus:ring-primary-300" />
+                                <span class="ml-2">Phone</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="preferredContact" value="either" class="text-primary focus:ring-primary-300" />
+                                <span class="ml-2">Either</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <input type="checkbox" id="newsletter" name="newsletter" class="mt-1 text-primary focus:ring-primary-300" />
+                        <label for="newsletter" class="ml-2 text-sm text-text-secondary">
+                            I would like to receive updates about FestivalHeart's impact and upcoming campaigns
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary w-full text-lg py-4">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-body-lg text-text-secondary">
+                    Find quick answers to common questions about donations, transparency, and our impact
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-lg shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-surface transition-colors">
+                        <span class="font-montserrat font-semibold">How do I know my donation reaches the intended families?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">We provide complete transparency through real-time tracking, photo/video updates, and detailed expense reports. Every donation is tracked from receipt to impact, with beneficiary stories and community feedback shared directly with donors. Our third-party audits and GuideStar Gold certification ensure accountability.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-lg shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-surface transition-colors">
+                        <span class="font-montserrat font-semibold">What percentage of my donation goes directly to festival support?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">85% of every donation goes directly to festival support including food, decorations, gifts, and celebration materials. 10% covers program operations like coordination and logistics, while only 5% goes to administrative costs. This breakdown is verified by independent auditors and published in our annual transparency report.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-lg shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-surface transition-colors">
+                        <span class="font-montserrat font-semibold">How do you ensure cultural authenticity in festival celebrations?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-secondary">We work closely with local community leaders, religious authorities, and cultural experts for each festival. Our team includes members from diverse backgrounds who understand traditional practices. We source authentic materials, follow proper customs, and ensure celebrations respect religious and cultural significance while bringing joy to families.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-lg shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-surface transition-colors">
+                        <span class="font-montserrat font-semibold">Can I donate to specific festivals or regions?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">Absolutely! You can choose to support specific festivals like Diwali, Eid, Christmas, or Holi, and select particular regions or communities. Our platform allows targeted giving while also offering general fund options that help us respond to urgent needs and support smaller festivals that might not receive as much attention.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-lg shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-surface transition-colors">
+                        <span class="font-montserrat font-semibold">How can my company become a corporate partner?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">We offer flexible corporate partnership programs including employee giving campaigns, festival sponsorships, and CSR initiatives. Contact our partnerships team at partnerships@festivalheart.org to discuss custom programs that align with your company's values and social impact goals. We provide detailed impact reporting for corporate stakeholders.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-white rounded-lg shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-surface transition-colors">
+                        <span class="font-montserrat font-semibold">Is my donation tax-deductible?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">Yes, FestivalHeart is a registered 501(c)(3) nonprofit organization, making all donations tax-deductible to the full extent allowed by law. You'll receive an immediate email receipt for your records, and annual giving statements are provided for tax preparation. Our tax ID number is included on all receipts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Location & Community Forum -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Office Location -->
+                <div class="bg-white rounded-2xl shadow-card p-8">
+                    <h3 class="text-heading-2 font-montserrat font-bold mb-6">Visit Our Headquarters</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-primary mt-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold">Address</div>
+                                <div class="text-text-secondary">
+                                    123 Festival Avenue<br />
+                                    Community District<br />
+                                    New York, NY 10001
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-primary mt-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold">Visiting Hours</div>
+                                <div class="text-text-secondary">
+                                    Monday - Friday: 9:00 AM - 6:00 PM<br />
+                                    Saturday: 10:00 AM - 4:00 PM<br />
+                                    Sunday: Closed
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-primary mt-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold">Transparency Meetings</div>
+                                <div class="text-text-secondary">
+                                    Schedule a visit to review our operations, meet our team, and see how donations create impact. Appointments available Tuesday-Thursday.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-6 border-t border-border">
+                        <h4 class="font-montserrat font-semibold mb-3">Getting Here</h4>
+                        <div class="text-text-secondary text-sm">
+                            <p class="mb-2">🚇 Subway: Take the 4, 5, 6 to Union Square (5 min walk)</p>
+                            <p class="mb-2">🚌 Bus: M14, M23 routes stop nearby</p>
+                            <p>🚗 Parking: Street parking and nearby garages available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Forum -->
+                <div class="bg-white rounded-2xl shadow-card p-8">
+                    <h3 class="text-heading-2 font-montserrat font-bold mb-6">Join Our Community</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="border border-border rounded-lg p-4">
+                            <h4 class="font-montserrat font-semibold mb-2">Community Forum</h4>
+                            <p class="text-text-secondary mb-3">Connect with other donors, share festival experiences, and get advice from our community.</p>
+                            <button class="btn-accent">Join Forum</button>
+                        </div>
+
+                        <div class="border border-border rounded-lg p-4">
+                            <h4 class="font-montserrat font-semibold mb-2">Video Tutorials</h4>
+                            <p class="text-text-secondary mb-3">Learn how to maximize your impact with step-by-step guides for donations and account management.</p>
+                            <button class="btn-primary">Watch Tutorials</button>
+                        </div>
+
+                        <div class="border border-border rounded-lg p-4">
+                            <h4 class="font-montserrat font-semibold mb-2">Help Center</h4>
+                            <p class="text-text-secondary mb-3">Browse our comprehensive knowledge base with detailed articles and troubleshooting guides.</p>
+                            <button class="btn-secondary">Browse Articles</button>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-border">
+                        <h4 class="font-montserrat font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="javascript:void(0)" class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center text-secondary hover:bg-secondary hover:text-white transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="w-10 h-10 bg-accent-100 rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.222.083.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact & Accessibility -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-heading-3 font-montserrat font-bold mb-4">Emergency Contact</h3>
+                    <p class="mb-4 opacity-90">
+                        For urgent campaign needs or time-sensitive donor concerns, contact our emergency response team.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <a href="tel:+1-800-URGENT1" class="hover:text-primary-200">+1 (800) URGENT1</a>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <a href="mailto:emergency@festivalheart.org" class="hover:text-primary-200">emergency@festivalheart.org</a>
+                        </div>
+                    </div>
+                    <p class="text-sm opacity-75 mt-3">Available 24/7 for critical situations</p>
+                </div>
+
+                <div>
+                    <h3 class="text-heading-3 font-montserrat font-bold mb-4">Accessibility Support</h3>
+                    <p class="mb-4 opacity-90">
+                        We're committed to making our platform accessible to everyone. Get assistance with screen readers, alternative formats, or other accessibility needs.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <a href="mailto:accessibility@festivalheart.org" class="hover:text-primary-200">accessibility@festivalheart.org</a>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <a href="tel:+1-800-ACCESS1" class="hover:text-primary-200">+1 (800) ACCESS1</a>
+                        </div>
+                    </div>
+                    <p class="text-sm opacity-75 mt-3">TTY and relay services available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="font-montserrat font-bold text-xl text-primary">FestivalHeart</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Transforming lives through the universal joy of festival celebrations.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="festival_campaign_pages.html" class="text-gray-300 hover:text-primary transition-colors">Festivals</a></li>
+                        <li><a href="impact_dashboard.html" class="text-gray-300 hover:text-primary transition-colors">Impact</a></li>
+                        <li><a href="donor_portal.html" class="text-gray-300 hover:text-primary transition-colors">Donor Portal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact_support.html" class="text-gray-300 hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="font-montserrat font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.222.083.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 FestivalHeart. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget" class="fixed bottom-4 right-4 z-50">
+        <button id="chat-toggle" class="bg-accent text-white rounded-full w-14 h-14 flex items-center justify-center shadow-hover hover:bg-accent-600 transition-all">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+            </svg>
+        </button>
+        
+        <div id="chat-window" class="hidden absolute bottom-16 right-0 w-80 h-96 bg-white rounded-lg shadow-hover border border-border">
+            <div class="bg-accent text-white p-4 rounded-t-lg flex justify-between items-center">
+                <div>
+                    <div class="font-semibold">FestivalHeart Support</div>
+                    <div class="text-sm opacity-90">We're online now</div>
+                </div>
+                <button id="close-chat" class="text-white hover:text-accent-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-4 h-64 overflow-y-auto">
+                <div class="bg-surface rounded-lg p-3 mb-3">
+                    <div class="text-sm font-semibold text-accent mb-1">Support Agent</div>
+                    <div class="text-sm">Hello! How can I help you today? I can assist with donations, partnerships, or any questions about our festivals.</div>
+                </div>
+            </div>
+            <div class="p-4 border-t border-border">
+                <div class="flex space-x-2">
+                    <input type="text" placeholder="Type your message..." class="flex-1 px-3 py-2 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-accent-300" />
+                    <button class="bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('svg');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Contact Form Submission
+        document.getElementById('contact-form-element').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            const form = this;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.textContent = 'Message Sent!';
+                submitBtn.classList.remove('btn-primary');
+                submitBtn.classList.add('bg-success', 'text-white');
+                
+                setTimeout(() => {
+                    form.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.classList.add('btn-primary');
+                    submitBtn.classList.remove('bg-success', 'text-white');
+                }, 2000);
+            }, 1500);
+        });
+
+        // Live Chat Widget
+        const chatToggle = document.getElementById('chat-toggle');
+        const chatWindow = document.getElementById('chat-window');
+        const closeChat = document.getElementById('close-chat');
+        const startChatBtn = document.getElementById('start-chat-btn');
+        const openChatBtn = document.getElementById('open-chat-btn');
+
+        function openChat() {
+            chatWindow.classList.remove('hidden');
+            chatToggle.style.display = 'none';
+        }
+
+        function closeChat() {
+            chatWindow.classList.add('hidden');
+            chatToggle.style.display = 'flex';
+        }
+
+        chatToggle.addEventListener('click', openChat);
+        closeChat.addEventListener('click', closeChat);
+        startChatBtn.addEventListener('click', openChat);
+        openChatBtn.addEventListener('click', openChat);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form field focus animations
+        document.querySelectorAll('.input-field').forEach(field => {
+            field.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            field.addEventListener('blur', function() {
+                this.parentElement.classList.remove('focused');
+            });
+        });
+
+        // Auto-resize textarea
+        const messageTextarea = document.getElementById('message');
+        messageTextarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
