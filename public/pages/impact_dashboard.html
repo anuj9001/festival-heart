@@ -26,13 +26,12 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
-                    <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">About Us</a>
                     <a href="festival_campaign_pages.html" class="text-text-secondary hover:text-primary transition-colors">Festivals</a>
                     <a href="impact_dashboard.html" class="text-primary font-semibold">Impact</a>
                     <a href="donor_portal.html" class="text-text-secondary hover:text-primary transition-colors">My Account</a>
                     <a href="partners_collaborators.html" class="text-text-secondary hover:text-primary transition-colors">Partners</a>
                     <a href="contact_support.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
-                    <button class="btn-primary">Donate Now</button>
+                    <a href="payment.html"><button class="btn-primary">Donate Now</button></a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -50,14 +49,13 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
-                <a href="javascript:void(0)" class="block px-3 py-2 text-text-secondary hover:text-primary">About Us</a>
                 <a href="festival_campaign_pages.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Festivals</a>
                 <a href="impact_dashboard.html" class="block px-3 py-2 text-primary font-semibold">Impact</a>
                 <a href="donor_portal.html" class="block px-3 py-2 text-text-secondary hover:text-primary">My Account</a>
                 <a href="partners_collaborators.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Partners</a>
                 <a href="contact_support.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
                 <div class="px-3 py-2">
-                    <button class="btn-primary w-full">Donate Now</button>
+                    <a href="payment.html"><button class="btn-primary w-full">Donate Now</button></a>
                 </div>
             </div>
         </div>
@@ -90,7 +88,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-heading-1 font-montserrat font-bold mb-4">Live Impact Metrics</h2>
-                <p class="text-body-lg text-text-secondary">Real-time updates from our global festival campaigns</p>
+                <p class="text-body-lg text-text-secondary">Real-time updates from our festival campaigns</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -101,7 +99,7 @@
                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                         </svg>
                     </div>
-                    <div class="text-3xl font-montserrat font-bold text-primary mb-2" id="total-donations">$2,847,392</div>
+                    <div class="text-3xl font-montserrat font-bold text-primary mb-2" id="total-donations">Rs 2,847,392</div>
                     <div class="text-text-secondary">Total Donations Raised</div>
                     <div class="text-sm text-success mt-2">↗ +12.5% this month</div>
                 </div>
@@ -205,27 +203,27 @@
                         <div class="space-y-4">
                             <div class="flex justify-between items-center py-2 border-b border-border-light">
                                 <span>Traditional foods & sweets</span>
-                                <span class="font-semibold">$1,420,485</span>
+                                <span class="font-semibold">Rs 1,420,485</span>
                             </div>
                             <div class="flex justify-between items-center py-2 border-b border-border-light">
                                 <span>Festival decorations & supplies</span>
-                                <span class="font-semibold">$852,291</span>
+                                <span class="font-semibold">Rs 852,291</span>
                             </div>
                             <div class="flex justify-between items-center py-2 border-b border-border-light">
                                 <span>Community space rentals</span>
-                                <span class="font-semibold">$568,194</span>
+                                <span class="font-semibold">Rs 568,194</span>
                             </div>
                             <div class="flex justify-between items-center py-2 border-b border-border-light">
                                 <span>Event coordination</span>
-                                <span class="font-semibold">$284,097</span>
+                                <span class="font-semibold">Rs 284,097</span>
                             </div>
                             <div class="flex justify-between items-center py-2 border-b border-border-light">
                                 <span>Platform development</span>
-                                <span class="font-semibold">$142,370</span>
+                                <span class="font-semibold">Rs 142,370</span>
                             </div>
                             <div class="flex justify-between items-center pt-4 font-bold text-lg">
                                 <span>Total Allocated</span>
-                                <span class="text-accent">$3,267,437</span>
+                                <span class="text-accent">Rs 3,267,437</span>
                             </div>
                         </div>
                     </div>
@@ -261,76 +259,107 @@
 
     <!-- Global Impact Map -->
     <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Global Impact Visualization</h2>
-                <p class="text-body-lg text-text-secondary">Click on regions to explore local campaign details and cultural contexts</p>
-            </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-heading-1 font-montserrat font-bold mb-4">India Statewise Impact Visualization</h2>
+            <p class="text-body-lg text-text-secondary">Click on states to explore local campaign and festival support</p>
+        </div>
 
-            <div class="bg-white rounded-2xl shadow-card overflow-hidden">
-                <!-- Interactive World Map -->
-                <div class="relative h-96 bg-gradient-to-br from-accent-50 to-accent-100 p-8">
-                    <svg class="w-full h-full" viewBox="0 0 800 400">
-                        <!-- Simplified world map with clickable regions -->
-                        <!-- Asia -->
-                        <path d="M400 100 L500 120 L520 180 L480 200 L420 190 L400 150 Z" fill="#9CAF88" opacity="0.8" class="cursor-pointer hover:opacity-100 transition-opacity region-asia" data-region="Asia" data-campaigns="847" data-families="12,450"/>
-                        
-                        <!-- Europe -->
-                        <path d="M350 80 L420 85 L415 130 L380 125 L355 120 Z" fill="#D4AF37" opacity="0.8" class="cursor-pointer hover:opacity-100 transition-opacity region-europe" data-region="Europe" data-campaigns="156" data-families="2,340"/>
-                        
-                        <!-- North America -->
-                        <path d="M150 90 L250 95 L240 160 L180 155 L160 140 Z" fill="#DC143C" opacity="0.8" class="cursor-pointer hover:opacity-100 transition-opacity region-north-america" data-region="North America" data-campaigns="189" data-families="2,890"/>
-                        
-                        <!-- Africa -->
-                        <path d="M320 160 L380 165 L375 240 L340 235 L325 220 Z" fill="#9CAF88" opacity="0.6" class="cursor-pointer hover:opacity-100 transition-opacity region-africa" data-region="Africa" data-campaigns="45" data-families="1,124"/>
-                        
-                        <!-- South America -->
-                        <path d="M200 200 L260 205 L250 280 L220 275 L205 260 Z" fill="#D4AF37" opacity="0.6" class="cursor-pointer hover:opacity-100 transition-opacity region-south-america" data-region="South America" data-campaigns="10" data-families="130"/>
-                    </svg>
-                    
-                    <!-- Region Info Tooltip -->
-                    <div id="region-tooltip" class="absolute bg-white p-4 rounded-lg shadow-hover border border-border hidden">
-                        <div class="font-semibold text-lg" id="tooltip-region"></div>
-                        <div class="text-sm text-text-secondary mt-1">
-                            <div>Campaigns: <span id="tooltip-campaigns" class="font-semibold"></span></div>
-                            <div>Families Served: <span id="tooltip-families" class="font-semibold"></span></div>
-                        </div>
+        <div class="bg-white rounded-2xl shadow-card overflow-hidden">
+            <!-- Interactive India Map (Simplified SVG) -->
+            <div class="relative h-96 bg-gradient-to-br from-accent-50 to-accent-100 p-8">
+                <svg class="w-full h-full" viewBox="0 0 800 400">
+                    <!-- North India (Uttar Pradesh, Delhi) -->
+                    <path d="M320 110 L400 120 L410 160 L360 180 L330 150 Z" fill="#9CAF88" opacity="0.85" class="cursor-pointer hover:opacity-100 transition-opacity state-up" data-state="Uttar Pradesh" data-campaigns="225" data-families="3,900"/>
+                    <path d="M370 90 L410 110 L400 138 L365 130 Z" fill="#3b82f6" opacity="0.85" class="cursor-pointer hover:opacity-100 transition-opacity state-delhi" data-state="Delhi" data-campaigns="83" data-families="1,200"/>
+                    <!-- West India (Maharashtra, Gujarat) -->
+                    <path d="M250 175 L315 180 L320 240 L270 230 L255 200 Z" fill="#dc143c" opacity="0.85" class="cursor-pointer hover:opacity-100 transition-opacity state-maha" data-state="Maharashtra" data-campaigns="186" data-families="2,750"/>
+                    <path d="M210 140 L260 150 L245 190 L210 185 Z" fill="#d4af37" opacity="0.85" class="cursor-pointer hover:opacity-100 transition-opacity state-guj" data-state="Gujarat" data-campaigns="70" data-families="1,150"/>
+                    <!-- South India (Tamil Nadu, Karnataka) -->
+                    <path d="M450 220 L520 225 L510 305 L470 295 L455 250 Z" fill="#7c3aed" opacity="0.75" class="cursor-pointer hover:opacity-100 transition-opacity state-tn" data-state="Tamil Nadu" data-campaigns="98" data-families="1,680"/>
+                    <path d="M400 190 L450 210 L430 250 L400 240 Z" fill="#10b981" opacity="0.85" class="cursor-pointer hover:opacity-100 transition-opacity state-karnataka" data-state="Karnataka" data-campaigns="77" data-families="1,460"/>
+                    <!-- East India (West Bengal) -->
+                    <path d="M520 160 L585 165 L570 205 L530 198 Z" fill="#f59e42" opacity="0.85" class="cursor-pointer hover:opacity-100 transition-opacity state-wb" data-state="West Bengal" data-campaigns="56" data-families="870"/>
+                </svg>
+                <!-- State Info Tooltip -->
+                <div id="state-tooltip" class="absolute bg-white p-4 rounded-lg shadow-hover border border-border hidden">
+                    <div class="font-semibold text-lg" id="tooltip-state"></div>
+                    <div class="text-sm text-text-secondary mt-1">
+                        <div>Campaigns: <span id="tooltip-state-campaigns" class="font-semibold"></span></div>
+                        <div>Families Served: <span id="tooltip-state-families" class="font-semibold"></span></div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Regional Statistics -->
-                <div class="p-8 bg-surface">
-                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                        <div class="text-center">
-                            <div class="w-4 h-4 bg-accent rounded-full mx-auto mb-2"></div>
-                            <div class="font-semibold">Asia</div>
-                            <div class="text-sm text-text-secondary">847 campaigns</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-4 h-4 bg-secondary rounded-full mx-auto mb-2"></div>
-                            <div class="font-semibold">North America</div>
-                            <div class="text-sm text-text-secondary">189 campaigns</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-4 h-4 bg-primary rounded-full mx-auto mb-2"></div>
-                            <div class="font-semibold">Europe</div>
-                            <div class="text-sm text-text-secondary">156 campaigns</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-4 h-4 bg-accent opacity-60 rounded-full mx-auto mb-2"></div>
-                            <div class="font-semibold">Africa</div>
-                            <div class="text-sm text-text-secondary">45 campaigns</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="w-4 h-4 bg-primary opacity-60 rounded-full mx-auto mb-2"></div>
-                            <div class="font-semibold">South America</div>
-                            <div class="text-sm text-text-secondary">10 campaigns</div>
-                        </div>
+            <!-- Statewise Statistics -->
+            <div class="p-8 bg-surface">
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <div class="text-center">
+                        <div class="w-4 h-4 bg-accent rounded-full mx-auto mb-2"></div>
+                        <div class="font-semibold">Uttar Pradesh</div>
+                        <div class="text-sm text-text-secondary">225 campaigns</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-4 h-4 bg-primary rounded-full mx-auto mb-2"></div>
+                        <div class="font-semibold">Delhi</div>
+                        <div class="text-sm text-text-secondary">83 campaigns</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-4 h-4 bg-secondary rounded-full mx-auto mb-2"></div>
+                        <div class="font-semibold">Maharashtra</div>
+                        <div class="text-sm text-text-secondary">186 campaigns</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-4 h-4 bg-warning-600 rounded-full mx-auto mb-2"></div>
+                        <div class="font-semibold">Gujarat</div>
+                        <div class="text-sm text-text-secondary">70 campaigns</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-4 h-4 bg-purple-500 rounded-full mx-auto mb-2"></div>
+                        <div class="font-semibold">Tamil Nadu</div>
+                        <div class="text-sm text-text-secondary">98 campaigns</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-4 h-4 bg-green-400 rounded-full mx-auto mb-2"></div>
+                        <div class="font-semibold">Karnataka</div>
+                        <div class="text-sm text-text-secondary">77 campaigns</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-4 h-4 bg-yellow-400 rounded-full mx-auto mb-2"></div>
+                        <div class="font-semibold">West Bengal</div>
+                        <div class="text-sm text-text-secondary">56 campaigns</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <script>
+    // Tooltip Logic for India states
+    document.querySelectorAll('svg [class*=cursor-pointer]').forEach(function(region) {
+        region.addEventListener('mouseenter', function(e) {
+            const tooltip = document.getElementById('state-tooltip');
+            const campaigns = e.target.getAttribute('data-campaigns');
+            const families = e.target.getAttribute('data-families');
+            const state = e.target.getAttribute('data-state');
+            document.getElementById('tooltip-state').textContent = state;
+            document.getElementById('tooltip-state-campaigns').textContent = campaigns;
+            document.getElementById('tooltip-state-families').textContent = families;
+            tooltip.style.display = 'block';
+            tooltip.style.left = (e.pageX - 180) + 'px';
+            tooltip.style.top = (e.pageY - 180) + 'px';
+        });
+        region.addEventListener('mouseleave', function() {
+            document.getElementById('state-tooltip').style.display = 'none';
+        });
+        region.addEventListener('mousemove', function(e) {
+            const tooltip = document.getElementById('state-tooltip');
+            tooltip.style.left = (e.pageX - 180) + 'px';
+            tooltip.style.top = (e.pageY - 180) + 'px';
+        });
+    });
+    </script>
+</section>
+
 
     <!-- Campaign Outcome Reports -->
     <section class="py-16 bg-surface">
@@ -354,7 +383,7 @@
                                 <div class="text-sm text-text-secondary">Families Served</div>
                             </div>
                             <div>
-                                <div class="text-2xl font-bold text-primary">$12,000</div>
+                                <div class="text-2xl font-bold text-primary">Rs 12,000</div>
                                 <div class="text-sm text-text-secondary">Total Raised</div>
                             </div>
                             <div>
@@ -403,7 +432,7 @@
                                 <div class="text-sm text-text-secondary">Families Served</div>
                             </div>
                             <div>
-                                <div class="text-2xl font-bold text-primary">$15,000</div>
+                                <div class="text-2xl font-bold text-primary">Rs 15,000</div>
                                 <div class="text-sm text-text-secondary">Total Raised</div>
                             </div>
                             <div>
@@ -459,7 +488,7 @@
                                 <div class="bg-white rounded-2xl shadow-card overflow-hidden">
                                     <div class="grid grid-cols-1 lg:grid-cols-2">
                                         <div class="relative h-64 lg:h-full">
-                                            <img src="https://images.pexels.com/photos/1673988/pexels-photo-1673988.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Diwali celebration success story" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                            <img src="https://cdn.pixabay.com/photo/2024/10/21/15/04/ai-generated-9137511_1280.jpg" alt="Diwali celebration success story" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                                             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                                                 <button class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-all">
                                                     <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
@@ -492,7 +521,7 @@
                                 <div class="bg-white rounded-2xl shadow-card overflow-hidden">
                                     <div class="grid grid-cols-1 lg:grid-cols-2">
                                         <div class="relative h-64 lg:h-full">
-                                            <img src="https://images.pixabay.com/photo/2019/05/31/23/11/ramadan-4242409_960_720.jpg" alt="Eid celebration success story" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                            <img src="https://cdn.pixabay.com/photo/2024/02/13/22/00/ai-generated-8571957_1280.jpg" alt="Eid celebration success story" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                                             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                                                 <button class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-all">
                                                     <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
@@ -532,314 +561,278 @@
 
     <!-- Partner Accountability -->
     <section class="py-16 bg-surface">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Partner Accountability</h2>
-                <p class="text-body-lg text-text-secondary">NGO collaborations with performance metrics and community feedback</p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-heading-1 font-montserrat font-bold mb-4">Partner Accountability</h2>
+            <p class="text-body-lg text-text-secondary">NGO collaborations with performance metrics and community feedback</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Partner 1 -->
+            <div class="bg-white rounded-2xl shadow-card p-6">
+                <div class="flex items-center space-x-4 mb-6">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=60&h=60&auto=format&fit=crop" alt="Hope Foundation Logo" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=60&h=60&fit=crop'; this.onerror=null;" />
+                    <div>
+                        <h3 class="font-montserrat font-semibold">Hope Foundation</h3>
+                        <div class="text-sm text-text-secondary">Mumbai, Maharashtra</div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm">Campaign Success Rate</span>
+                        <span class="font-semibold text-success">96%</span>
+                    </div>
+                    <div class="w-full bg-border rounded-full h-2">
+                        <div class="bg-success h-2 rounded-full" style="width: 96%"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm">Families Served</span>
+                        <span class="font-semibold">2,450</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm">Community Rating</span>
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Partner 1 -->
-                <div class="bg-white rounded-2xl shadow-card p-6">
-                    <div class="flex items-center space-x-4 mb-6">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=60&h=60&auto=format&fit=crop" alt="Hope Foundation Logo" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div>
-                            <h3 class="font-montserrat font-semibold">Hope Foundation</h3>
-                            <div class="text-sm text-text-secondary">Mumbai, India</div>
-                        </div>
+            <!-- Partner 2 -->
+            <div class="bg-white rounded-2xl shadow-card p-6">
+                <div class="flex items-center space-x-4 mb-6">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=60&h=60&fit=crop" alt="Community Care Society Logo" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=60&h=60&fit=crop'; this.onerror=null;" />
+                    <div>
+                        <h3 class="font-montserrat font-semibold">Community Care Society</h3>
+                        <div class="text-sm text-text-secondary">Kolkata, West Bengal</div>
                     </div>
-                    
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm">Campaign Success Rate</span>
-                            <span class="font-semibold text-success">96%</span>
-                        </div>
-                        <div class="w-full bg-border rounded-full h-2">
-                            <div class="bg-success h-2 rounded-full" style="width: 96%"></div>
-                        </div>
-                        
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm">Families Served</span>
-                            <span class="font-semibold">2,450</span>
-                        </div>
-                        
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm">Community Rating</span>
-                            <div class="flex space-x-1">
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm">Campaign Success Rate</span>
+                        <span class="font-semibold text-success">93%</span>
+                    </div>
+                    <div class="w-full bg-border rounded-full h-2">
+                        <div class="bg-success h-2 rounded-full" style="width: 93%"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm">Families Served</span>
+                        <span class="font-semibold">1,980</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm">Community Rating</span>
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-border" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Partner 2 -->
-                <div class="bg-white rounded-2xl shadow-card p-6">
-                    <div class="flex items-center space-x-4 mb-6">
-                        <img src="https://images.pixabay.com/photo/2016/12/27/21/03/logo-1934450_150.jpg" alt="Community Care Logo" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div>
-                            <h3 class="font-montserrat font-semibold">Community Care</h3>
-                            <div class="text-sm text-text-secondary">Dhaka, Bangladesh</div>
-                        </div>
-                    </div>
-                    
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm">Campaign Success Rate</span>
-                            <span class="font-semibold text-success">92%</span>
-                        </div>
-                        <div class="w-full bg-border rounded-full h-2">
-                            <div class="bg-success h-2 rounded-full" style="width: 92%"></div>
-                        </div>
-                        
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm">Families Served</span>
-                            <span class="font-semibold">1,890</span>
-                        </div>
-                        
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm">Community Rating</span>
-                            <div class="flex space-x-1">
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-border" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                        </div>
+            <!-- Partner 3 -->
+            <div class="bg-white rounded-2xl shadow-card p-6">
+                <div class="flex items-center space-x-4 mb-6">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=60&h=60&fit=crop" alt="Unity Network Logo" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=60&h=60&fit=crop'; this.onerror=null;" />
+                    <div>
+                        <h3 class="font-montserrat font-semibold">Unity Network</h3>
+                        <div class="text-sm text-text-secondary">Bengaluru, Karnataka</div>
                     </div>
                 </div>
-
-                <!-- Partner 3 -->
-                <div class="bg-white rounded-2xl shadow-card p-6">
-                    <div class="flex items-center space-x-4 mb-6">
-                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=60&h=60&auto=format&fit=crop" alt="Unity Network Logo" class="w-12 h-12 rounded-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div>
-                            <h3 class="font-montserrat font-semibold">Unity Network</h3>
-                            <div class="text-sm text-text-secondary">Lagos, Nigeria</div>
-                        </div>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm">Campaign Success Rate</span>
+                        <span class="font-semibold text-success">91%</span>
                     </div>
-                    
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm">Campaign Success Rate</span>
-                            <span class="font-semibold text-success">89%</span>
-                        </div>
-                        <div class="w-full bg-border rounded-full h-2">
-                            <div class="bg-success h-2 rounded-full" style="width: 89%"></div>
-                        </div>
-                        
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm">Families Served</span>
-                            <span class="font-semibold">1,124</span>
-                        </div>
-                        
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm">Community Rating</span>
-                            <div class="flex space-x-1">
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-border" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
+                    <div class="w-full bg-border rounded-full h-2">
+                        <div class="bg-success h-2 rounded-full" style="width: 91%"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm">Families Served</span>
+                        <span class="font-semibold">1,255</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm">Community Rating</span>
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-4 h-4 text-border" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Real-Time Updates -->
     <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Live Campaign Updates</h2>
-                <p class="text-body-lg text-text-secondary">Real-time progress tracking with live donation feeds and celebration photos</p>
-            </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-heading-1 font-montserrat font-bold mb-4">Live Campaign Updates</h2>
+            <p class="text-body-lg text-text-secondary">Real-time progress tracking with live donation feeds and celebration photos</p>
+        </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Live Donation Feed -->
-                <div class="bg-white rounded-2xl shadow-card p-6">
-                    <h3 class="text-heading-3 font-montserrat font-semibold mb-6">Recent Donations</h3>
-                    <div class="space-y-4 max-h-96 overflow-y-auto">
-                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
-                                    <span class="text-primary font-semibold">SJ</span>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-sm">Sarah Johnson</div>
-                                    <div class="text-xs text-text-secondary">2 minutes ago</div>
-                                </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Live Donation Feed -->
+            <div class="bg-white rounded-2xl shadow-card p-6">
+                <h3 class="text-heading-3 font-montserrat font-semibold mb-6">Recent Donations</h3>
+                <div class="space-y-4 max-h-96 overflow-y-auto">
+
+                    <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                                <span class="text-primary font-semibold">AP</span>
                             </div>
-                            <div class="text-right">
-                                <div class="font-semibold text-success">$50</div>
-                                <div class="text-xs text-text-secondary">Holi Mumbai</div>
+                            <div>
+                                <div class="font-semibold text-sm">Anita Patel</div>
+                                <div class="text-xs text-text-secondary">2 minutes ago</div>
                             </div>
                         </div>
+                        <div class="text-right">
+                            <div class="font-semibold text-success">₹500</div>
+                            <div class="text-xs text-text-secondary">Holi Mumbai</div>
+                        </div>
+                    </div>
 
-                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center">
-                                    <span class="text-secondary font-semibold">MC</span>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-sm">Michael Chen</div>
-                                    <div class="text-xs text-text-secondary">5 minutes ago</div>
-                                </div>
+                    <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center">
+                                <span class="text-secondary font-semibold">VK</span>
                             </div>
-                            <div class="text-right">
-                                <div class="font-semibold text-success">$100</div>
-                                <div class="text-xs text-text-secondary">Eid Dhaka</div>
+                            <div>
+                                <div class="font-semibold text-sm">Vikram Kumar</div>
+                                <div class="text-xs text-text-secondary">5 minutes ago</div>
                             </div>
                         </div>
+                        <div class="text-right">
+                            <div class="font-semibold text-success">₹2,000</div>
+                            <div class="text-xs text-text-secondary">Diwali Delhi</div>
+                        </div>
+                    </div>
 
-                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 bg-accent-100 rounded-full flex items-center justify-center">
-                                    <span class="text-accent font-semibold">AR</span>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-sm">Anonymous</div>
-                                    <div class="text-xs text-text-secondary">8 minutes ago</div>
-                                </div>
+                    <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-accent-100 rounded-full flex items-center justify-center">
+                                <span class="text-accent font-semibold">AR</span>
                             </div>
-                            <div class="text-right">
-                                <div class="font-semibold text-success">$25</div>
-                                <div class="text-xs text-text-secondary">Diwali Delhi</div>
+                            <div>
+                                <div class="font-semibold text-sm">Anonymous</div>
+                                <div class="text-xs text-text-secondary">8 minutes ago</div>
                             </div>
                         </div>
+                        <div class="text-right">
+                            <div class="font-semibold text-success">₹1,000</div>
+                            <div class="text-xs text-text-secondary">Eid Lucknow</div>
+                        </div>
+                    </div>
 
-                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
-                                    <span class="text-primary font-semibold">TC</span>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-sm">TechCorp</div>
-                                    <div class="text-xs text-text-secondary">12 minutes ago</div>
-                                </div>
+                    <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                                <span class="text-primary font-semibold">TI</span>
                             </div>
-                            <div class="text-right">
-                                <div class="font-semibold text-success">$500</div>
-                                <div class="text-xs text-text-secondary">Christmas Manila</div>
+                            <div>
+                                <div class="font-semibold text-sm">Tata Industries</div>
+                                <div class="text-xs text-text-secondary">12 minutes ago</div>
                             </div>
                         </div>
+                        <div class="text-right">
+                            <div class="font-semibold text-success">₹10,000</div>
+                            <div class="text-xs text-text-secondary">Ganesh Chaturthi Pune</div>
+                        </div>
+                    </div>
 
-                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center">
-                                    <span class="text-secondary font-semibold">RP</span>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-sm">Rajesh Patel</div>
-                                    <div class="text-xs text-text-secondary">15 minutes ago</div>
-                                </div>
+                    <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center">
+                                <span class="text-secondary font-semibold">RS</span>
                             </div>
-                            <div class="text-right">
-                                <div class="font-semibold text-success">$75</div>
-                                <div class="text-xs text-text-secondary">Holi Mumbai</div>
+                            <div>
+                                <div class="font-semibold text-sm">Rohit Sharma</div>
+                                <div class="text-xs text-text-secondary">15 minutes ago</div>
                             </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-semibold text-success">₹750</div>
+                            <div class="text-xs text-text-secondary">Navratri Ahmedabad</div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Current Campaign Progress -->
-                <div class="bg-white rounded-2xl shadow-card p-6">
-                    <h3 class="text-heading-3 font-montserrat font-semibold mb-6">Active Campaign Progress</h3>
-                    <div class="space-y-6">
-                        <!-- Holi Campaign -->
-                        <div class="p-4 bg-secondary-50 rounded-lg">
-                            <div class="flex items-center justify-between mb-3">
-                                <h4 class="font-semibold">Holi Festival - Mumbai</h4>
-                                <span class="text-sm text-secondary font-semibold">12 days left</span>
-                            </div>
-                            <div class="mb-3">
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span>$8,750 raised</span>
-                                    <span>Goal: $12,000</span>
-                                </div>
-                                <div class="w-full bg-border rounded-full h-2">
-                                    <div class="bg-secondary h-2 rounded-full transition-all duration-500" style="width: 73%"></div>
-                                </div>
-                            </div>
-                            <div class="text-sm text-text-secondary">73% funded • 156 donors</div>
+            <!-- Current Campaign Progress -->
+            <div class="bg-white rounded-2xl shadow-card p-6">
+                <h3 class="text-heading-3 font-montserrat font-semibold mb-6">Active Campaign Progress</h3>
+                <div class="space-y-6">
+                    <!-- Holi Campaign -->
+                    <div class="p-4 bg-secondary-50 rounded-lg">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-semibold">Holi Festival - Mumbai</h4>
+                            <span class="text-sm text-secondary font-semibold">12 days left</span>
                         </div>
+                        <div class="mb-3">
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>₹8,750 raised</span>
+                                <span>Goal: ₹12,000</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full transition-all duration-500" style="width: 73%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-text-secondary">73% funded • 156 donors</div>
+                    </div>
 
-                        <!-- Eid Campaign -->
-                        <div class="p-4 bg-accent-50 rounded-lg">
-                            <div class="flex items-center justify-between mb-3">
-                                <h4 class="font-semibold">Eid al-Fitr - Dhaka</h4>
-                                <span class="text-sm text-accent font-semibold">18 days left</span>
-                            </div>
-                            <div class="mb-3">
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span>$5,850 raised</span>
-                                    <span>Goal: $15,000</span>
-                                </div>
-                                <div class="w-full bg-border rounded-full h-2">
-                                    <div class="bg-accent h-2 rounded-full transition-all duration-500" style="width: 39%"></div>
-                                </div>
-                            </div>
-                            <div class="text-sm text-text-secondary">39% funded • 89 donors</div>
+                    <!-- Eid Campaign -->
+                    <div class="p-4 bg-accent-50 rounded-lg">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-semibold">Eid al-Fitr - Lucknow</h4>
+                            <span class="text-sm text-accent font-semibold">18 days left</span>
                         </div>
+                        <div class="mb-3">
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>₹5,850 raised</span>
+                                <span>Goal: ₹15,000</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full transition-all duration-500" style="width: 39%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-text-secondary">39% funded • 89 donors</div>
+                    </div>
 
-                        <!-- Christmas Campaign -->
-                        <div class="p-4 bg-primary-50 rounded-lg">
-                            <div class="flex items-center justify-between mb-3">
-                                <h4 class="font-semibold">Christmas - Manila</h4>
-                                <span class="text-sm text-primary font-semibold">45 days left</span>
-                            </div>
-                            <div class="mb-3">
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span>$3,200 raised</span>
-                                    <span>Goal: $18,000</span>
-                                </div>
-                                <div class="w-full bg-border rounded-full h-2">
-                                    <div class="bg-primary h-2 rounded-full transition-all duration-500" style="width: 18%"></div>
-                                </div>
-                            </div>
-                            <div class="text-sm text-text-secondary">18% funded • 42 donors</div>
+                    <!-- Ganesh Chaturthi Campaign -->
+                    <div class="p-4 bg-primary-50 rounded-lg">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-semibold">Ganesh Chaturthi - Pune</h4>
+                            <span class="text-sm text-primary font-semibold">20 days left</span>
                         </div>
+                        <div class="mb-3">
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>₹3,200 raised</span>
+                                <span>Goal: ₹18,000</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full transition-all duration-500" style="width: 18%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-text-secondary">18% funded • 42 donors</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Call to Action -->
     <section class="py-20 bg-accent text-white">
@@ -943,7 +936,7 @@
                 }
                 
                 if (element.id === 'total-donations') {
-                    element.textContent = '$' + Math.floor(current).toLocaleString();
+                    element.textContent = 'Rs ' + Math.floor(current).toLocaleString();
                 } else {
                     element.textContent = Math.floor(current).toLocaleString();
                 }
