@@ -26,13 +26,12 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
-                    <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">About Us</a>
                     <a href="festival_campaign_pages.html" class="text-primary font-semibold">Festivals</a>
                     <a href="impact_dashboard.html" class="text-text-secondary hover:text-primary transition-colors">Impact</a>
                     <a href="donor_portal.html" class="text-text-secondary hover:text-primary transition-colors">My Account</a>
                     <a href="partners_collaborators.html" class="text-text-secondary hover:text-primary transition-colors">Partners</a>
                     <a href="contact_support.html" class="text-text-secondary hover:text-primary transition-colors">Contact</a>
-                    <button class="btn-primary">Donate Now</button>
+                    <a href="payment.html"><button class="btn-primary">Donate Now</button></a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -50,14 +49,13 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
-                <a href="javascript:void(0)" class="block px-3 py-2 text-text-secondary hover:text-primary">About Us</a>
                 <a href="festival_campaign_pages.html" class="block px-3 py-2 text-primary font-semibold">Festivals</a>
                 <a href="impact_dashboard.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Impact</a>
                 <a href="donor_portal.html" class="block px-3 py-2 text-text-secondary hover:text-primary">My Account</a>
                 <a href="partners_collaborators.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Partners</a>
                 <a href="contact_support.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
                 <div class="px-3 py-2">
-                    <button class="btn-primary w-full">Donate Now</button>
+                    <a href="payment.html"><button class="btn-primary w-full">Donate Now</button></a>
                 </div>
             </div>
         </div>
@@ -95,500 +93,201 @@
     </section>
 
     <!-- Urgent Campaigns Section -->
-    <section id="urgent" class="py-20 bg-secondary-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <div class="inline-flex items-center space-x-2 bg-secondary text-white px-4 py-2 rounded-full mb-4">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    <span class="font-semibold">Time-Sensitive Campaigns</span>
-                </div>
-                <h2 class="text-heading-1 font-montserrat font-bold mb-4">Urgent Festival Support Needed</h2>
-                <p class="text-body-lg text-text-secondary max-w-2xl mx-auto">
-                    These campaigns need immediate support to ensure families can celebrate upcoming festivals with dignity and joy.
-                </p>
+    <!-- Urgent Campaigns Section (Modified for India) -->
+<section id="urgent" class="py-20 bg-secondary-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <div class="inline-flex items-center space-x-2 bg-secondary text-white px-4 py-2 rounded-full mb-4">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <span class="font-semibold">Time-Sensitive Campaigns</span>
             </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Urgent Holi Campaign -->
-                <div class="bg-white rounded-2xl shadow-hover overflow-hidden border-l-4 border-secondary">
-                    <div class="relative h-64">
-                        <img src="https://images.pexels.com/photos/1673988/pexels-photo-1673988.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop" alt="Children celebrating Holi with colors" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">⏰ 8 Days Left</span>
-                        </div>
-                        <div class="absolute top-4 right-4">
-                            <span class="bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">🎨 Holi</span>
-                        </div>
+            <h2 class="text-heading-1 font-montserrat font-bold mb-4">Urgent Festival Support Needed</h2>
+            <p class="text-body-lg text-text-secondary max-w-2xl mx-auto">
+                These campaigns need immediate support to ensure families can celebrate upcoming festivals with dignity and joy.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Urgent Holi Campaign (Mumbai) -->
+            <div class="bg-white rounded-2xl shadow-hover overflow-hidden border-l-4 border-secondary">
+                <div class="relative h-64">
+                    <img src="https://cdn.pixabay.com/photo/2024/03/19/03/33/girl-8642104_1280.jpg" alt="Children celebrating Holi with colors" class="w-full h-full object-cover" />
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">⏰ 8 Days Left</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-heading-3 font-montserrat font-bold mb-3">Mumbai Community Holi Celebration</h3>
-                        <p class="text-text-secondary mb-4">
-                            Help 200 families in Mumbai's underserved communities celebrate Holi with organic colors, traditional sweets, and community festivities.
-                        </p>
-                        
-                        <!-- Progress Bar -->
-                        <div class="mb-6">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-semibold text-secondary">$8,450 raised</span>
-                                <span class="text-text-secondary">Goal: $12,000</span>
-                            </div>
-                            <div class="w-full bg-border rounded-full h-3">
-                                <div class="bg-secondary h-3 rounded-full transition-all duration-500" style="width: 70%"></div>
-                            </div>
-                            <div class="flex justify-between text-sm text-text-secondary mt-2">
-                                <span>70% funded • 147 donors</span>
-                                <span>$3,550 needed</span>
-                            </div>
-                        </div>
-
-                        <!-- Quick Impact Options -->
-                        <div class="grid grid-cols-2 gap-3 mb-6">
-                            <button class="bg-secondary-50 border border-secondary-200 rounded-lg p-3 text-left hover:bg-secondary-100 transition-colors" onclick="selectDonation(25)">
-                                <div class="font-semibold text-secondary">$25</div>
-                                <div class="text-sm text-text-secondary">Holi colors for 1 family</div>
-                            </button>
-                            <button class="bg-secondary-50 border border-secondary-200 rounded-lg p-3 text-left hover:bg-secondary-100 transition-colors" onclick="selectDonation(75)">
-                                <div class="font-semibold text-secondary">$75</div>
-                                <div class="text-sm text-text-secondary">Complete celebration kit</div>
-                            </button>
-                        </div>
-
-                        <button class="btn-secondary w-full">Support Holi Campaign</button>
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">🎨 Holi</span>
                     </div>
                 </div>
-
-                <!-- Urgent Eid Campaign -->
-                <div class="bg-white rounded-2xl shadow-hover overflow-hidden border-l-4 border-accent">
-                    <div class="relative h-64">
-                        <img src="https://images.pixabay.com/photo/2019/05/31/23/11/ramadan-4242409_800.jpg" alt="Eid celebration with families sharing meals" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">⏰ 15 Days Left</span>
+                <div class="p-6">
+                    <h3 class="text-heading-3 font-montserrat font-bold mb-3">Mumbai Community Holi Celebration</h3>
+                    <p class="text-text-secondary mb-4">
+                        Help 200 families in Mumbai's underserved communities celebrate Holi with organic colors, traditional sweets, and community festivities.
+                    </p>
+                    <!-- Progress Bar -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-semibold text-secondary">Rs 8,450 raised</span>
+                            <span class="text-text-secondary">Goal: Rs 12,000</span>
                         </div>
-                        <div class="absolute top-4 right-4">
-                            <span class="bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">🌙 Eid</span>
+                        <div class="w-full bg-border rounded-full h-3">
+                            <div class="bg-secondary h-3 rounded-full transition-all duration-500" style="width: 70%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm text-text-secondary mt-2">
+                            <span>70% funded • 147 donors</span>
+                            <span>Rs 3,550 needed</span>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-heading-3 font-montserrat font-bold mb-3">Bangladesh Eid al-Fitr Feast</h3>
-                        <p class="text-text-secondary mb-4">
-                            Provide traditional Eid feast preparations for 150 families in rural Bangladesh, celebrating the end of Ramadan with joy and community.
-                        </p>
-                        
-                        <!-- Progress Bar -->
-                        <div class="mb-6">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-semibold text-accent">$5,200 raised</span>
-                                <span class="text-text-secondary">Goal: $15,000</span>
-                            </div>
-                            <div class="w-full bg-border rounded-full h-3">
-                                <div class="bg-accent h-3 rounded-full transition-all duration-500" style="width: 35%"></div>
-                            </div>
-                            <div class="flex justify-between text-sm text-text-secondary mt-2">
-                                <span>35% funded • 89 donors</span>
-                                <span>$9,800 needed</span>
-                            </div>
-                        </div>
-
-                        <!-- Quick Impact Options -->
-                        <div class="grid grid-cols-2 gap-3 mb-6">
-                            <button class="bg-accent-50 border border-accent-200 rounded-lg p-3 text-left hover:bg-accent-100 transition-colors" onclick="selectDonation(40)">
-                                <div class="font-semibold text-accent">$40</div>
-                                <div class="text-sm text-text-secondary">Eid feast for 1 family</div>
-                            </button>
-                            <button class="bg-accent-50 border border-accent-200 rounded-lg p-3 text-left hover:bg-accent-100 transition-colors" onclick="selectDonation(100)">
-                                <div class="font-semibold text-accent">$100</div>
-                                <div class="text-sm text-text-secondary">Community celebration</div>
-                            </button>
-                        </div>
-
-                        <button class="btn-accent w-full">Support Eid Campaign</button>
+                    <!-- Quick Impact Options -->
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <button class="bg-secondary-50 border border-secondary-200 rounded-lg p-3 text-left hover:bg-secondary-100 transition-colors" onclick="selectDonation(25)">
+                            <div class="font-semibold text-secondary">Rs 25</div>
+                            <div class="text-sm text-text-secondary">Holi colors for 1 family</div>
+                        </button>
+                        <button class="bg-secondary-50 border border-secondary-200 rounded-lg p-3 text-left hover:bg-secondary-100 transition-colors" onclick="selectDonation(75)">
+                            <div class="font-semibold text-secondary">Rs 75</div>
+                            <div class="text-sm text-text-secondary">Complete celebration kit</div>
+                        </button>
                     </div>
+                    <a href="payment.html"><button class="btn-secondary w-full">Support Holi Campaign</button></a>
+                </div>
+            </div>
+            <!-- Urgent Eid Campaign (West Bengal) -->
+            <div class="bg-white rounded-2xl shadow-hover overflow-hidden border-l-4 border-accent">
+                <div class="relative h-64">
+                    <img src="https://cdn.pixabay.com/photo/2024/06/07/17/35/ai-generated-8815073_1280.jpg" alt="Eid celebration with families sharing meals" class="w-full h-full object-cover"/>
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">⏰ 15 Days Left</span>
+                    </div>
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">🌙 Eid</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-heading-3 font-montserrat font-bold mb-3">Murshidabad Eid al-Fitr Feast</h3>
+                    <p class="text-text-secondary mb-4">
+                        Provide traditional Eid feast preparations for 150 families in the rural areas of Murshidabad, West Bengal, celebrating the end of Ramadan with joy and community.
+                    </p>
+                    <!-- Progress Bar -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-semibold text-accent">Rs 5,200 raised</span>
+                            <span class="text-text-secondary">Goal: Rs 15,000</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-3">
+                            <div class="bg-accent h-3 rounded-full transition-all duration-500" style="width: 35%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm text-text-secondary mt-2">
+                            <span>35% funded • 89 donors</span>
+                            <span>Rs 9,800 needed</span>
+                        </div>
+                    </div>
+                    <!-- Quick Impact Options -->
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <button class="bg-accent-50 border border-accent-200 rounded-lg p-3 text-left hover:bg-accent-100 transition-colors" onclick="selectDonation(40)">
+                            <div class="font-semibold text-accent">Rs 40</div>
+                            <div class="text-sm text-text-secondary">Eid feast for 1 family</div>
+                        </button>
+                        <button class="bg-accent-50 border border-accent-200 rounded-lg p-3 text-left hover:bg-accent-100 transition-colors" onclick="selectDonation(100)">
+                            <div class="font-semibold text-accent">Rs 100</div>
+                            <div class="text-sm text-text-secondary">Community celebration</div>
+                        </button>
+                    </div>
+                    <a href="payment.html"><button class="btn-accent w-full">Support Eid Campaign</button></a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Diwali Festival Section -->
-    <section id="diwali" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <span class="text-3xl">🪔</span>
-                        <h2 class="text-heading-1 font-montserrat font-bold">Diwali - Festival of Lights</h2>
+<!-- Christmas Festival Section (Modified for India, Child beneficiary spotlight) -->
+<section id="christmas" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <span class="text-3xl">🎄</span>
+                <h2 class="text-heading-1 font-montserrat font-bold">Christmas - Season of Giving</h2>
+            </div>
+            <p class="text-body-lg text-text-secondary max-w-3xl mx-auto">
+                Christmas embodies the spirit of giving, love, and hope. This cherished celebration brings communities together through acts of kindness and generosity. Help us ensure every child experiences the magic of Christmas morning.
+            </p>
+        </div>
+
+        <!-- Featured Christmas Campaign (Kolkata) -->
+        <div class="bg-white rounded-2xl shadow-hover overflow-hidden mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="relative h-64 lg:h-full">
+                    <img src="https://cdn.pixabay.com/photo/2024/11/19/00/00/wallpaper-9207714_1280.png" alt="Children opening Christmas presents with joy" class="w-full h-full object-cover" />
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Featured Campaign</span>
                     </div>
+                </div>
+                <div class="p-8 lg:p-12">
+                    <h3 class="text-heading-2 font-montserrat font-bold mb-4">Christmas Joy for 500 Children in Kolkata</h3>
                     <p class="text-body-lg text-text-secondary mb-6">
-                        Diwali, the festival of lights, symbolizes the victory of light over darkness and good over evil. For millions of families, lighting diyas (oil lamps) represents hope, prosperity, and new beginnings. Your support helps families illuminate their homes and hearts with traditional celebrations.
+                        Bring Christmas magic to children in orphanages and low-income families across Kolkata. Every child deserves to wake up to presents under the tree.
                     </p>
-                    <div class="bg-primary-50 rounded-lg p-6 mb-6">
-                        <h4 class="font-montserrat font-semibold mb-3 text-primary">Cultural Significance</h4>
-                        <ul class="space-y-2 text-text-secondary">
-                            <li class="flex items-start space-x-2">
-                                <span class="text-primary mt-1">•</span>
-                                <span>Five-day celebration honoring Lakshmi, goddess of wealth and prosperity</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-primary mt-1">•</span>
-                                <span>Families clean and decorate homes with rangoli patterns and lights</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-primary mt-1">•</span>
-                                <span>Traditional sweets and gifts are shared with neighbors and loved ones</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1605538883669-825200433431?q=80&w=800&h=600&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Beautiful Diwali diyas and rangoli decorations" class="w-full h-96 object-cover rounded-2xl shadow-hover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                </div>
-            </div>
-
-            <!-- Diwali Campaigns -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Campaign 1 -->
-                <div class="bg-white rounded-2xl shadow-card overflow-hidden hover:shadow-hover transition-all">
-                    <div class="relative h-48">
-                        <img src="https://images.pexels.com/photos/6344231/pexels-photo-6344231.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Children lighting Diwali diyas" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Active</span>
+                    <!-- Progress Tracking -->
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-semibold text-success">Rs 18,750 raised</span>
+                            <span class="text-text-secondary">Goal: Rs 25,000</span>
+                        </div>
+                        <div class="w-full bg-border rounded-full h-4">
+                            <div class="bg-success h-4 rounded-full transition-all duration-500" style="width: 75%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm text-text-secondary mt-2">
+                            <span>75% funded • 312 donors</span>
+                            <span>Rs 6,250 needed</span>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-heading-4 font-montserrat font-semibold mb-3">Delhi Community Diwali</h3>
-                        <p class="text-text-secondary text-sm mb-4">
-                            300 families in Delhi slums will receive traditional Diwali celebration kits with diyas, sweets, and decorations.
+                    <!-- Beneficiary Spotlight -->
+                    <div class="bg-success-50 rounded-lg p-4 mb-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=60&h=60&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Anjali Sharma" class="w-12 h-12 rounded-full object-cover" />
+                            <div>
+                                <div class="font-semibold">Anjali Sharma</div>
+                                <div class="text-sm text-text-secondary">Single mother of 3, Kolkata</div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-text-secondary italic">
+                            "Last Christmas, my children had no gifts. This year, thanks to your kindness, they'll experience the joy every child deserves."
                         </p>
-                        <div class="mb-4">
-                            <div class="flex justify-between text-sm mb-2">
-                                <span class="font-semibold">$12,400 / $20,000</span>
-                                <span class="text-text-secondary">62%</span>
-                            </div>
-                            <div class="w-full bg-border rounded-full h-2">
-                                <div class="bg-primary h-2 rounded-full" style="width: 62%"></div>
-                            </div>
-                        </div>
-                        <button class="btn-primary w-full text-sm">Support Campaign</button>
                     </div>
-                </div>
-
-                <!-- Campaign 2 -->
-                <div class="bg-white rounded-2xl shadow-card overflow-hidden hover:shadow-hover transition-all">
-                    <div class="relative h-48">
-                        <img src="https://images.pixabay.com/photo/2017/10/07/15/04/diwali-2826724_600.jpg" alt="Traditional Diwali sweets and decorations" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-heading-4 font-montserrat font-semibold mb-3">Rural Maharashtra Diwali</h3>
-                        <p class="text-text-secondary text-sm mb-4">
-                            Successfully provided Diwali celebrations for 150 farming families in drought-affected regions.
-                        </p>
-                        <div class="mb-4">
-                            <div class="flex justify-between text-sm mb-2">
-                                <span class="font-semibold text-success">$8,500 / $8,500</span>
-                                <span class="text-success">100%</span>
-                            </div>
-                            <div class="w-full bg-border rounded-full h-2">
-                                <div class="bg-success h-2 rounded-full" style="width: 100%"></div>
-                            </div>
-                        </div>
-                        <button class="bg-success text-white font-montserrat font-semibold px-6 py-3 rounded-lg w-full text-sm">
-                            View Impact Report
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Campaign 3 -->
-                <div class="bg-white rounded-2xl shadow-card overflow-hidden hover:shadow-hover transition-all">
-                    <div class="relative h-48">
-                        <img src="https://images.unsplash.com/photo-1636197244537-d8c2b0b8c4b7?q=80&w=600&h=400&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Diwali rangoli patterns and lights" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-warning text-white px-3 py-1 rounded-full text-sm font-semibold">Planning</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-heading-4 font-montserrat font-semibold mb-3">Kolkata Diwali 2025</h3>
-                        <p class="text-text-secondary text-sm mb-4">
-                            Planning ahead for next year's Diwali celebrations for 500 families in Kolkata's underserved communities.
-                        </p>
-                        <div class="mb-4">
-                            <div class="flex justify-between text-sm mb-2">
-                                <span class="font-semibold">$2,100 / $25,000</span>
-                                <span class="text-text-secondary">8%</span>
-                            </div>
-                            <div class="w-full bg-border rounded-full h-2">
-                                <div class="bg-warning h-2 rounded-full" style="width: 8%"></div>
-                            </div>
-                        </div>
-                        <button class="bg-warning text-white font-montserrat font-semibold px-6 py-3 rounded-lg w-full text-sm">
-                            Early Support
-                        </button>
-                    </div>
+                    <a href="payment.html"><button class="bg-success text-white font-montserrat font-semibold px-8 py-4 rounded-lg w-full text-lg hover:bg-green-600 transition-colors">
+                        Sponsor Christmas Joy
+                    </button></a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Eid Festival Section -->
-    <section id="eid" class="py-20 bg-surface">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-                <div class="order-2 lg:order-1">
-                    <img src="https://images.pexels.com/photos/8001010/pexels-photo-8001010.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Families celebrating Eid together with traditional foods" class="w-full h-96 object-cover rounded-2xl shadow-hover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+        <!-- Christmas Impact Grid (INR) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl">🎁</span>
                 </div>
-                <div class="order-1 lg:order-2">
-                    <div class="flex items-center space-x-2 mb-4">
-                        <span class="text-3xl">🌙</span>
-                        <h2 class="text-heading-1 font-montserrat font-bold">Eid - Celebration of Unity</h2>
-                    </div>
-                    <p class="text-body-lg text-text-secondary mb-6">
-                        Eid al-Fitr marks the end of Ramadan, a time of spiritual reflection and community bonding. This joyous celebration brings families together to share meals, exchange gifts, and strengthen community ties. Your support ensures no family is left out of this beautiful tradition.
-                    </p>
-                    <div class="bg-accent-50 rounded-lg p-6 mb-6">
-                        <h4 class="font-montserrat font-semibold mb-3 text-accent">Celebration Traditions</h4>
-                        <ul class="space-y-2 text-text-secondary">
-                            <li class="flex items-start space-x-2">
-                                <span class="text-accent mt-1">•</span>
-                                <span>Special prayers and community gatherings at dawn</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-accent mt-1">•</span>
-                                <span>Traditional feast with dates, sweets, and special dishes</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-accent mt-1">•</span>
-                                <span>Zakat al-Fitr charity given to help the less fortunate celebrate</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <h4 class="font-montserrat font-semibold mb-2">Rs 20 Impact</h4>
+                <p class="text-text-secondary text-sm">Christmas gift for one child including toys, books, and treats</p>
             </div>
-
-            <!-- Interactive Donation Calculator -->
-            <div class="bg-white rounded-2xl shadow-hover p-8 mb-12">
-                <h3 class="text-heading-2 font-montserrat font-bold text-center mb-8">Eid Impact Calculator</h3>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div>
-                        <h4 class="font-montserrat font-semibold mb-4">Choose Your Impact</h4>
-                        <div class="space-y-3">
-                            <label class="flex items-center space-x-3 p-4 border border-border rounded-lg hover:bg-accent-50 cursor-pointer">
-                                <input type="radio" name="eid-impact" value="30" class="text-accent" onchange="calculateEidImpact()" />
-                                <div class="flex-1">
-                                    <div class="font-semibold">$30 - Eid Feast for One Family</div>
-                                    <div class="text-sm text-text-secondary">Traditional dates, sweets, and special meal ingredients</div>
-                                </div>
-                            </label>
-                            <label class="flex items-center space-x-3 p-4 border border-border rounded-lg hover:bg-accent-50 cursor-pointer">
-                                <input type="radio" name="eid-impact" value="75" class="text-accent" onchange="calculateEidImpact()" />
-                                <div class="flex-1">
-                                    <div class="font-semibold">$75 - Complete Eid Celebration</div>
-                                    <div class="text-sm text-text-secondary">Feast, new clothes for children, and gifts</div>
-                                </div>
-                            </label>
-                            <label class="flex items-center space-x-3 p-4 border border-border rounded-lg hover:bg-accent-50 cursor-pointer">
-                                <input type="radio" name="eid-impact" value="150" class="text-accent" onchange="calculateEidImpact()" />
-                                <div class="flex-1">
-                                    <div class="font-semibold">$150 - Community Eid Gathering</div>
-                                    <div class="text-sm text-text-secondary">Shared celebration space and communal feast</div>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="bg-accent-50 rounded-lg p-6">
-                        <h4 class="font-montserrat font-semibold mb-4">Your Impact</h4>
-                        <div id="eid-impact-display" class="space-y-3 text-text-secondary">
-                            <p>Select an option to see your impact</p>
-                        </div>
-                        <button id="eid-donate-btn" class="btn-accent w-full mt-6" disabled>
-                            Select Amount to Donate
-                        </button>
-                    </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl">🍽️</span>
                 </div>
+                <h4 class="font-montserrat font-semibold mb-2">Rs 50 Impact</h4>
+                <p class="text-text-secondary text-sm">Christmas dinner for entire family with traditional Indian dishes</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl">🏠</span>
+                </div>
+                <h4 class="font-montserrat font-semibold mb-2">Rs 100 Impact</h4>
+                <p class="text-text-secondary text-sm">Complete Christmas celebration for family of 5</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Christmas Festival Section -->
-    <section id="christmas" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <div class="flex items-center justify-center space-x-2 mb-4">
-                    <span class="text-3xl">🎄</span>
-                    <h2 class="text-heading-1 font-montserrat font-bold">Christmas - Season of Giving</h2>
-                </div>
-                <p class="text-body-lg text-text-secondary max-w-3xl mx-auto">
-                    Christmas embodies the spirit of giving, love, and hope. This cherished celebration brings communities together through acts of kindness and generosity. Help us ensure every child experiences the magic of Christmas morning.
-                </p>
-            </div>
-
-            <!-- Featured Christmas Campaign -->
-            <div class="bg-white rounded-2xl shadow-hover overflow-hidden mb-12">
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <div class="relative h-64 lg:h-full">
-                        <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?q=80&w=800&h=600&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Children opening Christmas presents with joy" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Featured Campaign</span>
-                        </div>
-                    </div>
-                    <div class="p-8 lg:p-12">
-                        <h3 class="text-heading-2 font-montserrat font-bold mb-4">Christmas Joy for 500 Children</h3>
-                        <p class="text-body-lg text-text-secondary mb-6">
-                            Bring Christmas magic to children in orphanages and low-income families across the Philippines. Every child deserves to wake up to presents under the tree.
-                        </p>
-                        
-                        <!-- Progress Tracking -->
-                        <div class="mb-6">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-semibold text-success">$18,750 raised</span>
-                                <span class="text-text-secondary">Goal: $25,000</span>
-                            </div>
-                            <div class="w-full bg-border rounded-full h-4">
-                                <div class="bg-success h-4 rounded-full transition-all duration-500" style="width: 75%"></div>
-                            </div>
-                            <div class="flex justify-between text-sm text-text-secondary mt-2">
-                                <span>75% funded • 312 donors</span>
-                                <span>$6,250 needed</span>
-                            </div>
-                        </div>
-
-                        <!-- Beneficiary Spotlight -->
-                        <div class="bg-success-50 rounded-lg p-4 mb-6">
-                            <div class="flex items-center space-x-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=60&h=60&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Maria Santos" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                                <div>
-                                    <div class="font-semibold">Maria Santos</div>
-                                    <div class="text-sm text-text-secondary">Single mother of 3, Manila</div>
-                                </div>
-                            </div>
-                            <p class="text-sm text-text-secondary italic">
-                                "Last Christmas, my children had no gifts. This year, thanks to your kindness, they'll experience the joy every child deserves."
-                            </p>
-                        </div>
-
-                        <button class="bg-success text-white font-montserrat font-semibold px-8 py-4 rounded-lg w-full text-lg hover:bg-green-600 transition-colors">
-                            Sponsor Christmas Joy
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Christmas Impact Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl">🎁</span>
-                    </div>
-                    <h4 class="font-montserrat font-semibold mb-2">$20 Impact</h4>
-                    <p class="text-text-secondary text-sm">Christmas gift for one child including toys, books, and treats</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl">🍽️</span>
-                    </div>
-                    <h4 class="font-montserrat font-semibold mb-2">$50 Impact</h4>
-                    <p class="text-text-secondary text-sm">Christmas dinner for entire family with traditional dishes</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl">🏠</span>
-                    </div>
-                    <h4 class="font-montserrat font-semibold mb-2">$100 Impact</h4>
-                    <p class="text-text-secondary text-sm">Complete Christmas celebration for family of 5</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Holi Festival Section -->
-    <section id="holi" class="py-20 bg-surface">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <span class="text-3xl">🎨</span>
-                        <h2 class="text-heading-1 font-montserrat font-bold">Holi - Festival of Colors</h2>
-                    </div>
-                    <p class="text-body-lg text-text-secondary mb-6">
-                        Holi celebrates the arrival of spring and the triumph of good over evil. This vibrant festival brings communities together through colors, music, and joy. Help families celebrate this beautiful tradition that breaks down barriers and unites hearts.
-                    </p>
-                    
-                    <!-- Traditional Recipe Sharing -->
-                    <div class="bg-warning-50 rounded-lg p-6 mb-6">
-                        <h4 class="font-montserrat font-semibold mb-3 text-warning-800">Traditional Holi Treats</h4>
-                        <div class="space-y-3 text-text-secondary text-sm">
-                            <div class="flex items-start space-x-2">
-                                <span class="text-warning-600 mt-1">🥮</span>
-                                <div>
-                                    <div class="font-semibold">Gujiya</div>
-                                    <div>Sweet dumplings filled with khoya and dry fruits</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-2">
-                                <span class="text-warning-600 mt-1">🥛</span>
-                                <div>
-                                    <div class="font-semibold">Thandai</div>
-                                    <div>Refreshing drink with almonds, rose petals, and spices</div>
-                                </div>
-                            </div>
-                            <div class="flex items-start space-x-2">
-                                <span class="text-warning-600 mt-1">🍯</span>
-                                <div>
-                                    <div class="font-semibold">Puran Poli</div>
-                                    <div>Sweet flatbread with lentil and jaggery filling</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img src="https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="People celebrating Holi with colorful powders" class="w-full h-96 object-cover rounded-2xl shadow-hover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                </div>
-            </div>
-
-            <!-- Partner Organization Spotlight -->
-            <div class="bg-white rounded-2xl shadow-hover p-8 mb-12">
-                <div class="text-center mb-8">
-                    <h3 class="text-heading-2 font-montserrat font-bold mb-4">Partner Organization Spotlight</h3>
-                    <p class="text-body-lg text-text-secondary">
-                        Working with trusted local partners to ensure authentic and respectful celebrations
-                    </p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="flex items-start space-x-4">
-                        <img src="https://images.pixabay.com/photo/2016/12/27/21/03/logo-1934450_150.jpg" alt="Mumbai Community Foundation logo" class="w-16 h-16 object-contain rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div>
-                            <h4 class="font-montserrat font-semibold mb-2">Mumbai Community Foundation</h4>
-                            <p class="text-text-secondary text-sm mb-2">
-                                Serving underserved communities in Mumbai for over 15 years with cultural celebration programs.
-                            </p>
-                            <div class="flex items-center space-x-2 text-sm">
-                                <span class="bg-success-100 text-success px-2 py-1 rounded-full">Verified Partner</span>
-                                <span class="text-text-secondary">Since 2018</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start space-x-4">
-                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=150&h=150&auto=format&fit=crop" alt="Delhi Cultural Society logo" class="w-16 h-16 object-contain rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div>
-                            <h4 class="font-montserrat font-semibold mb-2">Delhi Cultural Society</h4>
-                            <p class="text-text-secondary text-sm mb-2">
-                                Preserving traditional celebrations and supporting families in Delhi's urban villages.
-                            </p>
-                            <div class="flex items-center space-x-2 text-sm">
-                                <span class="bg-success-100 text-success px-2 py-1 rounded-full">Verified Partner</span>
-                                <span class="text-text-secondary">Since 2020</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Social Sharing Section -->
     <section class="py-20 bg-primary text-white">
